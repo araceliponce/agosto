@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.min.css">
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.min.js" defer></script>
+
+
+  <!--       "Desarrolladora web especializada en diseño responsive, Grid, Flexbox y experiencia de usuario." -->
+
+
+
+</head>
+
+<body>
+
+
+  <style>
+    .h1-container {
+      max-width: 90vw;
+    }
+  </style>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+
+
+  <style>
+    .container {
+      width: 100%;
+      height: auto;
+      padding: 100vh 40px 50vh;
+    }
+
+    .title {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+    }
+
+    .cards {
+      width: 100%;
+      max-width: 1024px;
+      display: flex;
+      justify-content: space-between;
+      margin: 80px auto 0;
+    }
+
+    .card {
+      width: 48%;
+      border-radius: 10px;
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .text {
+      font-size: 18px;
+      line-height: 1.8;
+      font-weight: 500;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 200px;
+      padding: 10px;
+      background-color: #3CB371;
+      color: white;
+      margin: 20px auto 0;
+      font-size: 18px;
+      border-radius: 4px;
+      margin-top: auto;
+    }
+
+    .media {
+      width: 100%;
+      max-width: 1024px;
+      height: auto;
+      padding: 20px;
+      background-color: #fff;
+      margin: 80px auto 0;
+      border-radius: 10px;
+      display: flex;
+    }
+
+    .media__img {
+      display: block;
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .media__text {
+      width: 50%;
+      padding: 10px;
+      line-height: 2;
+    }
+
+    .btns {
+      max-width: 1024px;
+      display: flex;
+      gap: 40px;
+      margin: 80px auto 0;
+      justify-content: center;
+    }
+
+    .btn--larger {
+      width: 100%;
+      padding: 20px;
+      max-width: initial;
+    }
+
+    .items {
+      /* max-width: 1024px; */
+      /* width: 100%; */
+      margin: 80px auto;
+      gap: 20px;
+    }
+
+    .items .item:nth-of-type(odd) {
+      background-color: #3CB371;
+    }
+
+    .items .item:nth-of-type(even) {
+      background-color: #fff;
+      color: #3CB371;
+    }
+
+    .item {
+      width: 100%;
+      color: white;
+      border-radius: 5px;
+      height: auto;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+
+  <div id="loadPanel" class="textCentered">
+
+    <div class="load-content">
+
+      <svg id="loadIcon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M20.27,4.74a4.93,4.93,0,0,1,1.52,4.61,5.32,5.32,0,0,1-4.1,4.51,5.12,5.12,0,0,1-5.2-1.5,5.53,5.53,0,0,0,6.13-1.48A5.66,5.66,0,0,0,20.27,4.74ZM12.32,11.53a5.49,5.49,0,0,0-1.47-6.2A5.57,5.57,0,0,0,4.71,3.72,5.17,5.17,0,0,1,9.53,2.2,5.52,5.52,0,0,1,13.9,6.45,5.28,5.28,0,0,1,12.32,11.53ZM19.2,20.29a4.92,4.92,0,0,1-4.72,1.49,5.32,5.32,0,0,1-4.34-4.05A5.2,5.2,0,0,1,11.6,12.5a5.6,5.6,0,0,0,1.51,6.13A5.63,5.63,0,0,0,19.2,20.29ZM3.79,19.38A5.18,5.18,0,0,1,2.32,14a5.3,5.3,0,0,1,4.59-4,5,5,0,0,1,4.58,1.61,5.55,5.55,0,0,0-6.32,1.69A5.46,5.46,0,0,0,3.79,19.38ZM12.23,12a5.11,5.11,0,0,0,3.66-5,5.75,5.75,0,0,0-3.18-6,5,5,0,0,1,4.42,2.3,5.21,5.21,0,0,1,.24,5.92A5.4,5.4,0,0,1,12.23,12ZM11.76,12a5.18,5.18,0,0,0-3.68,5.09,5.58,5.58,0,0,0,3.19,5.79c-1,.35-2.9-.46-4-1.68A5.51,5.51,0,0,1,11.76,12ZM23,12.63a5.07,5.07,0,0,1-2.35,4.52,5.23,5.23,0,0,1-5.91.2,5.24,5.24,0,0,1-2.67-4.77,5.51,5.51,0,0,0,5.45,3.33A5.52,5.52,0,0,0,23,12.63ZM1,11.23a5,5,0,0,1,2.49-4.5,5.23,5.23,0,0,1,5.81-.06,5.3,5.3,0,0,1,2.61,4.74A5.56,5.56,0,0,0,6.56,8.06,5.71,5.71,0,0,0,1,11.23Z">
+          <animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" />
+        </path>
+      </svg>
+    </div>
+
+
+  </div>
+
+  <!-- <p>nature does not hurry,yet everythingis accomplished</p> -->
+
+  <section class="hero padding js-fadeIn">
+    <small class="logo">a.p.s.</small>
+
+    <div class="titleBig rotating-letters">
+
+      <small>Hola, yo soy </small>
+      <span class="allCaps word">Araceli Ponce Sanga</span>
+      <div class="allCaps word">Desarrolladora ux/ui</div>
+    </div>
+
+    <div class="alignSelfEnd">
+
+      <div class="grid-3-7 textAlignEnd mb-regular gap-0">
+        <div></div>
+        <div>
+          <p>Aquí encontrarás mis proyectos destacados, mis herramientas y mis datos de contacto</p>
+          <p><b>Disponible a partir de junio de 2023</b></p>
+        </div>
+      </div>
+    </div>
+    <p class="tape fixedOnBottom"><span>Sitio en construcción</span></p>
+
+
+  </section>
+
+
+  <section class="intro pt10 js-fadeIn dNone">
+    <h2 class="">Enlaces rápidos a</h2>
+    <ul class="flex justifyContentCenter js-popUps ">
+      <li><a href="">
+          <div class="flexCol">
+            <small class="">QUÉ HAGO</small>
+            <span class="title">Proyectos Destacados</span>
+          </div>
+        </a></li>
+      <li><a href="">
+          <div class="flexCol">
+            <small>QUÉ HERRAMIENTAS USO</small>
+            <span class="title">Mis Herramientas</span>
+          </div>
+        </a></li>
+      <li><a href="">
+          <div class="flexCol">
+            <small>CÓMO CONTACTARME</small>
+            <span class="title">Mis datos de contacto</span>
+          </div>
+        </a></li>
+    </ul>
+  </section>
+
+
+
+
+
+
+  <script>
+    "use strict";
+    let words = document.querySelectorAll(".word");
+    words.forEach(word => {
+      let letters = word.textContent.split("");
+      word.textContent = "";
+      letters.forEach(letter => {
+        let span = document.createElement("span");
+        span.textContent = letter;
+        span.className = "letter";
+        word.append(span);
+      });
+    });
+    let currentWordIndex = 0;
+    let maxWordIndex = words.length - 1;
+    words[currentWordIndex].style.opacity = "1";
+    let rotateText = () => {
+      let currentWord = words[currentWordIndex];
+      let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+      // rotate out letters of current word
+      Array.from(currentWord.children).forEach((letter, i) => {
+        setTimeout(() => {
+          letter.className = "letter out";
+        }, i * 80);
+      });
+      // reveal and rotate in letters of next word
+      nextWord.style.opacity = "1";
+      Array.from(nextWord.children).forEach((letter, i) => {
+        letter.className = "letter behind";
+        setTimeout(() => {
+          letter.className = "letter in";
+        }, 340 + i * 80);
+      });
+      currentWordIndex =
+        currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+    };
+    rotateText();
+    setInterval(rotateText, 4000);
+
+  </script>
+
+  <style>
+    .rotating-letters span {
+      display: inline-flex;
+      margin: 0;
+      vertical-align: top;
+    }
+
+    .rotating-letters .word {
+      position: absolute;
+      display: flex;
+      opacity: 0;
+
+      max-width: 90vw;
+      flex-wrap: wrap;
+
+    }
+
+    .rotating-letters .letter {
+      transform-origin: center center 25px;
+    }
+
+    .rotating-letters .letter.out {
+      transform: rotateX(90deg);
+      transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+    }
+
+    .rotating-letters .letter.in {
+      transition: 0.38s ease;
+    }
+
+    .rotating-letters .letter.behind {
+      transform: rotateX(-90deg);
+    }
+
+    .rotating-letters span {
+      min-width: 0.7rem;
+    }
+  </style>
+
+  <section class="normalContainer pt10 js-fadeIn">
+
+    <h2 class="titleRegular underlinedWrapper">
+      <div>
+        <span>Proyectos</span>
+        <span class="serif">Destacados</span>
+      </div>
+    </h2>
+
+
+    </div>
+  </section>
+
+  <section class="100vw  " id="">
+    <div class="project  js-fadeIn">
+
+      <div class="imgContainer">
+        <img src="001.png" alt="" />
+        <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button>
+
+      </div>
+
+      <div class="circleContainer">
+        <div class="circle">
+          <div>
+            <h4>Sitio de notas</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illum reprehenderit voluptate in molestiae beatae dicta? Illo mollitia dolor ex incidunt rerum, placeat similique aliquam alias sint vero? Qui, id?</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="project js-fadeIn">
+
+      <div class="imgContainer">
+        <img src="https://cdn.dribbble.com/userupload/3626337/file/original-7b837f0a63a6bced72fab48863f9f16b.png?compress=1&resize=752x" alt="" />
+        <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button>
+
+      </div>
+
+      <div class="circleContainer">
+        <div class="circle">
+          <h4>proyecto bloc de notas</h4>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="project js-fadeIn">
+
+      <div class="imgContainer">
+        <img src="https://unsplash.it/900/900" alt="" />
+
+
+        <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button>
+      </div>
+
+      <div class="circleContainer">
+        <div class="circle">
+          <h4>landing page hotel</h4>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <div class="textCenter js-fadeIn pt10">
+    <h2 class="titleRegular textCenter">
+      <span>Las</span>
+      <span class="serif">herramientas</span>
+      <span>que uso</span>
+    </h2>
+  </div>
+  <section class="padding-inline tools js-fadeIn">
+
+    <div class="mba grid-3-7">
+      <div>
+      </div>
+      <div class="">
+
+        <section class="faq ">
+          <dl class="">
+            <dt><button aria-controls="uxui" aria-expanded="true" data-accordion-header>
+                <span>Diseño UX/UI</span>
+                <div class="accordionIcon">
+                  <div class="line"></div>
+                </div>
+              </button></dt>
+            <dd id="uxui">
+              <!-- dd is hidden, using an inside container for flex or grid -->
+              <div class="flexCol">
+                <div class="flex alignItemsCenter pt-2 js-popUps tags">
+                  <span class="tag">Figma</span>
+                  <span class="tag">Framer</span>
+                  <span class="tag">Wordpress</span>
+                  <span class="tag">Papel y lápiz</span>
+                </div>
+              </div>
+            </dd>
+
+            <dt><button aria-controls="desWeb" aria-expanded="true" data-accordion-header class="">
+                <span>Desarrollo web</span>
+                <div class="accordionIcon">
+                  <div class="line"></div>
+                </div>
+              </button></dt>
+            <dd id="desWeb">
+              <div class="flexCol">
+                <div class="flex alignItemsCenter pt-2 js-popUps tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Angular y Typescript</span>
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">Angular Material</span>
+                  <span class="tag">Jekyll y Liquid</span>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="flex  padding grid-7-3 contact">
+    <div class="titleRegular mb-big">
+
+      <div class="grid alignContentCenter">
+        <h1>
+          <span class="serif">Araceli Ponce Sanga.</span>
+          <div class="underlined">Desarrolladora web</div>
+          <div class="h-0">y <span id="changingText"></span></div>
+        </h1>
+      </div>
+
+
+
+
+    </div>
+    <div class="emailsContainer flexCol">
+
+      <div class="emailsOutro mta flexCol rotating-letters">
+        <small>Escríbeme a <span>aponcesanga@gmail.com</span></small>
+        <small>(Como son las <span id="timeContainer"></span> para mí, te responderé <span id="timeText"></span>)</small>
+      </div>
+    </div>
+  </section>
+
+  <footer class="">
+    <div class="flex pInline">
+      <div class="siteLinks mla">
+        <span>También puedes encontrarme en:</span>
+        <a href="https://github.com/araceliponce" target="_blank" rel="noopener noreferrer">Github</a>
+      </div>
+    </div>
+    <div class="marquee extraSmall rainbow dNone">
+      <p class="marqueeItems">
+        <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
+        <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
+        <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
+        <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
+      </p>
+    </div>
+  </footer>
+  <div class="alwaysGrid">
+    <button id="initMatter" class="">jugar</button>
+  </div>
+  <div id="matterContainer" class="hidden">
+    <span class="in-matter block" id="bb">FLEXBOX</span>
+    <span class="in-matter block" id="c">HTML5</span>
+    <span class="in-matter block" id="d">GRID</span>
+    <span class="in-matter block" id="d">JAVASCRIPT</span>
+    <span class="in-matter block">MATTER.JS</span>
+    <form class="in-matter block">
+      <div class="matterTextContainer">
+        <input class="" name="input" placeholder="No escribas aquí..." autocomplete="off" required>
+        <button class="">
+          <i data-icon="arrow-right" aria-hidden="true" class=""><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8.5h9M8.5 4.5l3.5 4-3.5 4" stroke="currentColor" stroke-width="1.2"></path>
+              <path d="m2.8 8.1 1.9.1 2 .2h5.2M12 8.4c0-.6-.6-.9-1-1.2l-.6-.3-.3-.3-.4-.2-.6-.6-.4-.6-.3-.8M12 8.4c0 .7-.6 1.2-1 1.7l-1.2 1.4-.9.6-.5.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
+            </svg></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script type="module">
+    /* https://a11y-dialog.netlify.app/installation */
+    import A11yDialog from 'https://cdn.jsdelivr.net/npm/a11y-dialog@7/dist/a11y-dialog.esm.min.js'
+
+    const containers = document.querySelectorAll('.dialog-container')
+
+    console.log(containers)
+
+    containers.forEach(container => {
+      let dialog = new A11yDialog(container)
+    })
+
+    const botonesAbrirModal = document.querySelectorAll('button[dialog]');
+
+    botonesAbrirModal.forEach((boton) => {
+      boton.addEventListener('click', () => {
+        // Obtenemos la imagen del artículo actual y su src
+        const projectImage = boton.parentNode.querySelector('img');
+        console.log(projectImage)
+
+        const srcProjectImage = projectImage.getAttribute('src');
+
+        // Y lo clonamos en la imagen dentro del dialogEl
+        const dialogImage = document.getElementById('dialogImage');
+
+        dialogImage.setAttribute('src', srcProjectImage);
+
+      });
+    });
+
+  </script>
+
+
+
+  <div id="goToTheTop" class="hidden">
+    <a href="#">VOLVER ARRIBA</a>
+  </div>
+
+
+  <div class="dialog-container" id="my-dialog" aria-hidden="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-description">
+    <div class="dialog-overlay" data-a11y-dialog-hide></div>
+    <div class="dialog-content" role="document">
+      <button data-a11y-dialog-hide class="dialog-close" aria-label="Close this dialog window">
+        <svg class="svg-icon" viewBox="0 0 20 20">
+          <path fill="currentcolor" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+        </svg>
+      </button>
+
+      <img id="dialogImage" src="https://cdn.dribbble.com/userupload/3626337/file/original-7b837f0a63a6bced72fab48863f9f16b.png?compress=1&resize=752x" alt="" />
+
+    </div>
+  </div>
+
+</body>
+
+</html>
