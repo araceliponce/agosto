@@ -1,164 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Araceli Ponce Sanga — Portafolio</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/113866541">
+
+  <!-- Icono de la aplicación en el entorno de Windows si se agrega a la pantalla de inicio o se muestra en el menú de inicio -->
+  <meta name="msapplication-TileImage" content="https://avatars.githubusercontent.com/u/113866541" />
+
+  <meta name="msapplication-TileColor" content="#222" />
+  <meta name="theme-color" content="#222" />
+
+  <!-- Social info -->
+  <meta property="og:title" content="Portafolio de Araceli Ponce Sanga" />
+  <meta property="og:image" content="images/cover.png" />
+  <meta property="og:description" content="Desarrolladora web especializada en diseño responsive usando Grid y Flexbox" />
+  <meta property="og:url" content="https://araceliponce.github.io/" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="index.min.css">
+  <link rel="stylesheet" href="index.css">
 
   <!-- Scripts -->
+  <!-- Matter -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="index.min.js" defer></script>
 
-
-  <!--       "Desarrolladora web especializada en diseño responsive, Grid, Flexbox y experiencia de usuario." -->
-
-
-
-</head>
-
-<body>
-
-
-  <style>
-    .h1-container {
-      max-width: 90vw;
-    }
-  </style>
-
+  <!-- Gsap -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
+  <script src="index.min.js" defer></script>
+  <!-- <script src="index.js" defer></script> -->
 
 
-  <style>
-    .container {
-      width: 100%;
-      height: auto;
-      padding: 100vh 40px 50vh;
-    }
+  <!-- nature does not hurry,yet everything is accomplished -->
+</head>
 
-    .title {
-      font-size: 40px;
-      color: white;
-      text-align: center;
-    }
-
-    .cards {
-      width: 100%;
-      max-width: 1024px;
-      display: flex;
-      justify-content: space-between;
-      margin: 80px auto 0;
-    }
-
-    .card {
-      width: 48%;
-      border-radius: 10px;
-      background-color: #fff;
-      padding: 20px 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-
-    .text {
-      font-size: 18px;
-      line-height: 1.8;
-      font-weight: 500;
-      margin: 20px 0;
-    }
-
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      max-width: 200px;
-      padding: 10px;
-      background-color: #3CB371;
-      color: white;
-      margin: 20px auto 0;
-      font-size: 18px;
-      border-radius: 4px;
-      margin-top: auto;
-    }
-
-    .media {
-      width: 100%;
-      max-width: 1024px;
-      height: auto;
-      padding: 20px;
-      background-color: #fff;
-      margin: 80px auto 0;
-      border-radius: 10px;
-      display: flex;
-    }
-
-    .media__img {
-      display: block;
-      width: 50%;
-      height: auto;
-      object-fit: cover;
-    }
-
-    .media__text {
-      width: 50%;
-      padding: 10px;
-      line-height: 2;
-    }
-
-    .btns {
-      max-width: 1024px;
-      display: flex;
-      gap: 40px;
-      margin: 80px auto 0;
-      justify-content: center;
-    }
-
-    .btn--larger {
-      width: 100%;
-      padding: 20px;
-      max-width: initial;
-    }
-
-    .items {
-      /* max-width: 1024px; */
-      /* width: 100%; */
-      margin: 80px auto;
-      gap: 20px;
-    }
-
-    .items .item:nth-of-type(odd) {
-      background-color: #3CB371;
-    }
-
-    .items .item:nth-of-type(even) {
-      background-color: #fff;
-      color: #3CB371;
-    }
-
-    .item {
-      width: 100%;
-      color: white;
-      border-radius: 5px;
-      height: auto;
-      aspect-ratio: 1/1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 18px;
-    }
-  </style>
-
+<body>
   <div id="loadPanel" class="textCentered">
 
     <div class="load-content">
@@ -173,30 +57,28 @@
 
   </div>
 
-  <!-- <p>nature does not hurry,yet everythingis accomplished</p> -->
-
-  <section class="hero padding js-fadeIn">
+  <section class="hero padding ">
     <small class="logo">a.p.s.</small>
 
     <div class="titleBig rotating-letters">
 
       <small>Hola, yo soy </small>
-      <span class="allCaps word">Araceli Ponce Sanga</span>
-      <div class="allCaps word">Desarrolladora ux/ui</div>
+      <span aria-label="Araceli Ponce Sanga " class="allCaps word">Araceli Ponce Sanga</span>
+      <div aria-label="Desarrolladora enfocada en UX/UI" class="allCaps word">Desarrolladora ux/ui</div>
     </div>
 
-    <div class="alignSelfEnd">
+    <div class="alignSelfEnd ">
 
       <div class="grid-3-7 textAlignEnd mb-regular gap-0">
         <div></div>
-        <div>
+        <div class="opacity-0">
           <p>Aquí encontrarás mis proyectos destacados, mis herramientas y mis datos de contacto</p>
-          <p><b>Disponible a partir de junio de 2023</b></p>
+          <p><b>Disponible para proyectos web a partir de junio de 2023</b></p>
         </div>
       </div>
-    </div>
-    <p class="tape fixedOnBottom"><span>Sitio en construcción</span></p>
 
+    </div>
+    <p class="tape fixedOnBottom"><span>¡Hola, estoy trabajando en este sitio! Si ves algo extraño, es temporal.</span></p>
 
   </section>
 
@@ -228,88 +110,6 @@
 
 
 
-
-
-  <script>
-    "use strict";
-    let words = document.querySelectorAll(".word");
-    words.forEach(word => {
-      let letters = word.textContent.split("");
-      word.textContent = "";
-      letters.forEach(letter => {
-        let span = document.createElement("span");
-        span.textContent = letter;
-        span.className = "letter";
-        word.append(span);
-      });
-    });
-    let currentWordIndex = 0;
-    let maxWordIndex = words.length - 1;
-    words[currentWordIndex].style.opacity = "1";
-    let rotateText = () => {
-      let currentWord = words[currentWordIndex];
-      let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
-      // rotate out letters of current word
-      Array.from(currentWord.children).forEach((letter, i) => {
-        setTimeout(() => {
-          letter.className = "letter out";
-        }, i * 80);
-      });
-      // reveal and rotate in letters of next word
-      nextWord.style.opacity = "1";
-      Array.from(nextWord.children).forEach((letter, i) => {
-        letter.className = "letter behind";
-        setTimeout(() => {
-          letter.className = "letter in";
-        }, 340 + i * 80);
-      });
-      currentWordIndex =
-        currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-    };
-    rotateText();
-    setInterval(rotateText, 4000);
-
-  </script>
-
-  <style>
-    .rotating-letters span {
-      display: inline-flex;
-      margin: 0;
-      vertical-align: top;
-    }
-
-    .rotating-letters .word {
-      position: absolute;
-      display: flex;
-      opacity: 0;
-
-      max-width: 90vw;
-      flex-wrap: wrap;
-
-    }
-
-    .rotating-letters .letter {
-      transform-origin: center center 25px;
-    }
-
-    .rotating-letters .letter.out {
-      transform: rotateX(90deg);
-      transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
-    }
-
-    .rotating-letters .letter.in {
-      transition: 0.38s ease;
-    }
-
-    .rotating-letters .letter.behind {
-      transform: rotateX(-90deg);
-    }
-
-    .rotating-letters span {
-      min-width: 0.7rem;
-    }
-  </style>
-
   <section class="normalContainer pt10 js-fadeIn">
 
     <h2 class="titleRegular underlinedWrapper">
@@ -324,26 +124,38 @@
   </section>
 
   <section class="100vw  " id="">
-    <div class="project  js-fadeIn">
+    <article class="project ">
 
       <div class="imgContainer">
-        <img src="001.png" alt="" />
+        <img src="images/001.png" alt="" />
         <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button>
 
       </div>
 
       <div class="circleContainer">
-        <div class="circle">
-          <div>
-            <h4>Sitio de notas</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illum reprehenderit voluptate in molestiae beatae dicta? Illo mollitia dolor ex incidunt rerum, placeat similique aliquam alias sint vero? Qui, id?</p>
+        <div class="circle js-fadeIn">
+
+          <div class="circleText">
+            <h4 class="projectName">FicusJot</h4>
+            <span class="projectStatus">en desarrollo</span>
+            <ul class="flex textSmall justifyContentCenter">
+              <li class="tag">html5</li>
+              <li class="tag">css3</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+            <p>Tu sitio para notas rápidas y navegación optimizada sin complicaciones</p>
+            <div class="botones">
+              <a href="">Ver código</a>
+              <a href="">Ver en la web</a>
+            </div>
           </div>
+
         </div>
       </div>
 
-    </div>
+    </article>
 
-    <div class="project js-fadeIn">
+    <article class="project">
 
       <div class="imgContainer">
         <img src="https://cdn.dribbble.com/userupload/3626337/file/original-7b837f0a63a6bced72fab48863f9f16b.png?compress=1&resize=752x" alt="" />
@@ -351,32 +163,30 @@
 
       </div>
 
-      <div class="circleContainer">
+      <div class="circleContainer js-fadeIn">
         <div class="circle">
-          <h4>proyecto bloc de notas</h4>
+
+          <div class="circleText">
+            <h4 class="projectName">SinNombre</h4>
+            <span class="projectStatus">en desarrollo</span>
+            <ul class="flex textSmall justifyContentCenter">
+              <li class="tag">wordpress</li>
+              <li class="tag">css3</li>
+            </ul>
+            <p>Exploración a fondo del CMS Wordpress a través de proyecto de mini e-commerce personal. Aprendiendo sobre temas, plugins y personalización con código propio</p>
+            <div class="botones">
+              <a href=""></a>
+            </div>
+          </div>
+
+
         </div>
       </div>
 
 
-    </div>
-
-    <div class="project js-fadeIn">
-
-      <div class="imgContainer">
-        <img src="https://unsplash.it/900/900" alt="" />
+    </article>
 
 
-        <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button>
-      </div>
-
-      <div class="circleContainer">
-        <div class="circle">
-          <h4>landing page hotel</h4>
-        </div>
-      </div>
-
-
-    </div>
 
 
   </section>
@@ -447,10 +257,10 @@
 
 
 
-  <section class="flex  padding grid-7-3 contact">
+  <section class="flex  padding grid-7-3 contact js-fadeIn">
     <div class="titleRegular mb-big">
 
-      <div class="grid alignContentCenter">
+      <div class="grid alignContentCenter js-popUps">
         <h1>
           <span class="serif">Araceli Ponce Sanga.</span>
           <div class="underlined">Desarrolladora web</div>
@@ -462,17 +272,17 @@
 
 
     </div>
-    <div class="emailsContainer flexCol">
+    <div class="emailsContainer flexCol js-popUps">
 
-      <div class="emailsOutro mta flexCol rotating-letters">
-        <small>Escríbeme a <span>aponcesanga@gmail.com</span></small>
-        <small>(Como son las <span id="timeContainer"></span> para mí, te responderé <span id="timeText"></span>)</small>
+      <div class="emailsOutro mta flexCol">
+        <p>Escríbeme a <span>aponcesanga@gmail.com</span></p>
+        <p class="textSmall">Son las <span id="timeContainer"></span> para mí, así que si no estoy ocupada te responderé <span id="timeText"></span> :)</p>
       </div>
     </div>
   </section>
 
   <footer class="">
-    <div class="flex pInline">
+    <div class="flex pInline js-popUps">
       <div class="siteLinks mla">
         <span>También puedes encontrarme en:</span>
         <a href="https://github.com/araceliponce" target="_blank" rel="noopener noreferrer">Github</a>
