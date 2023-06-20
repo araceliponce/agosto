@@ -23,10 +23,13 @@
   <meta property="og:url" content="https://araceliponce.github.io/" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="index.min.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="indexPc.min.css">
 
   <!-- Scripts -->
+
+  <script src="indexL.min.js" defer></script>
+  <script src="indexPc.min.js" defer></script>
+
   <!-- Matter -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -35,11 +38,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
-  <script src="index.min.js" defer></script>
-  <!-- <script src="index.js" defer></script> -->
+  <!-- p5js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-  <!-- nature does not hurry,yet everything is accomplished -->
 </head>
 
 <body>
@@ -49,7 +50,7 @@
 
       <svg id="loadIcon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
         <path fill="currentColor" d="M20.27,4.74a4.93,4.93,0,0,1,1.52,4.61,5.32,5.32,0,0,1-4.1,4.51,5.12,5.12,0,0,1-5.2-1.5,5.53,5.53,0,0,0,6.13-1.48A5.66,5.66,0,0,0,20.27,4.74ZM12.32,11.53a5.49,5.49,0,0,0-1.47-6.2A5.57,5.57,0,0,0,4.71,3.72,5.17,5.17,0,0,1,9.53,2.2,5.52,5.52,0,0,1,13.9,6.45,5.28,5.28,0,0,1,12.32,11.53ZM19.2,20.29a4.92,4.92,0,0,1-4.72,1.49,5.32,5.32,0,0,1-4.34-4.05A5.2,5.2,0,0,1,11.6,12.5a5.6,5.6,0,0,0,1.51,6.13A5.63,5.63,0,0,0,19.2,20.29ZM3.79,19.38A5.18,5.18,0,0,1,2.32,14a5.3,5.3,0,0,1,4.59-4,5,5,0,0,1,4.58,1.61,5.55,5.55,0,0,0-6.32,1.69A5.46,5.46,0,0,0,3.79,19.38ZM12.23,12a5.11,5.11,0,0,0,3.66-5,5.75,5.75,0,0,0-3.18-6,5,5,0,0,1,4.42,2.3,5.21,5.21,0,0,1,.24,5.92A5.4,5.4,0,0,1,12.23,12ZM11.76,12a5.18,5.18,0,0,0-3.68,5.09,5.58,5.58,0,0,0,3.19,5.79c-1,.35-2.9-.46-4-1.68A5.51,5.51,0,0,1,11.76,12ZM23,12.63a5.07,5.07,0,0,1-2.35,4.52,5.23,5.23,0,0,1-5.91.2,5.24,5.24,0,0,1-2.67-4.77,5.51,5.51,0,0,0,5.45,3.33A5.52,5.52,0,0,0,23,12.63ZM1,11.23a5,5,0,0,1,2.49-4.5,5.23,5.23,0,0,1,5.81-.06,5.3,5.3,0,0,1,2.61,4.74A5.56,5.56,0,0,0,6.56,8.06,5.71,5.71,0,0,0,1,11.23Z">
-          <animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" />
+          <animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" begin="0s" />
         </path>
       </svg>
     </div>
@@ -57,33 +58,159 @@
 
   </div>
 
-  <section class="hero padding ">
-    <small class="logo">a.p.s.</small>
 
-    <div class="titleBig rotating-letters">
+
+  <!-- <main> -->
+
+
+  <nav id="nav" class="mobile opacity-0">
+    <a href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+          <path stroke-dasharray="21" stroke-dashoffset="21" d="M5 21H19">
+            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="21;0" begin="5s" />
+          </path>
+          <path stroke-dasharray="15" stroke-dashoffset="15" d="M5 21V8M19 21V8">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.2s" dur="0.2s" values="15;0" />
+          </path>
+          <path stroke-dasharray="26" stroke-dashoffset="26" d="M2 10L12 2L22 10">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.5s" dur="0.4s" values="26;0" />
+          </path>
+        </g>
+      </svg>
+      <p class="smallest">INICIO</p>
+
+    </a>
+    <a href="#proyectos" class="">
+      <span>Proyectos destacados</span>
+      <svg id="laptop" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+          <path stroke-dasharray="50" stroke-dashoffset="50" d="M12 17H5V7H19V17Z">
+            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="50;0" begin="5.2s" />
+          </path>
+          <path stroke-dasharray="20" stroke-dashoffset="20" d="M3 19H21">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.8s" dur="0.3s" values="20;0" />
+          </path>
+        </g>
+      </svg>
+      <p class="smallest">PROYECTOS</p>
+
+    </a>
+
+    <a href="#stack">
+      <span>herramientas</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-dasharray="14" stroke-dashoffset="14" stroke-linecap="round" stroke-width="1">
+          <path d="M8 5H20">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.1s" dur="0.2s" values="14;0" />
+          </path>
+          <path d="M8 10H20">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.4s" dur="0.2s" values="14;0" />
+          </path>
+          <path d="M8 15H20">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.7s" dur="0.2s" values="14;0" />
+          </path>
+          <path d="M8 20H20">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="6s" dur="0.2s" values="14;0" />
+          </path>
+        </g>
+        <g fill="currentColor" fill-opacity="0">
+          <circle cx="4" cy="5" r="1">
+            <animate fill="freeze" attributeName="fill-opacity" begin="5s" dur="0.2s" values="0;1" />
+          </circle>
+          <circle cx="4" cy="10" r="1">
+            <animate fill="freeze" attributeName="fill-opacity" begin="5.3s" dur="0.2s" values="0;1" />
+          </circle>
+          <circle cx="4" cy="15" r="1">
+            <animate fill="freeze" attributeName="fill-opacity" begin="5.6s" dur="0.2s" values="0;1" />
+          </circle>
+          <circle cx="4" cy="20" r="1">
+            <animate fill="freeze" attributeName="fill-opacity" begin="5.9s" dur="0.2s" values="0;1" />
+          </circle>
+        </g>
+      </svg>
+      <p class="smallest">STACK</p>
+    </a>
+    <a href="#contacto">
+      <span>Contacto</span>
+      <svg class="opacity-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1">
+          <rect width="18" height="14" x="3" y="5" stroke-dasharray="64" stroke-dashoffset="64" rx="1">
+            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" begin="5.4s" />
+          </rect>
+          <path stroke-dasharray="24" stroke-dashoffset="24" d="M3 6.5L12 12L21 6.5">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="6s" dur="0.4s" values="24;0" />
+          </path>
+        </g>
+      </svg>
+      <p class="smallest">CONTACTO</p>
+
+
+    </a>
+    <div class="hidemeDiv">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-dasharray="10" stroke-dashoffset="10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+          <path d="M5 12L12 5M5 12L12 19">
+            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="10;0" begin="5" />
+          </path>
+          <path d="M11 12L18 5M11 12L18 19">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.3s" dur="0.3s" values="10;0" />
+          </path>
+        </g>
+      </svg>
+      <p class="smallest">SLIDE ME</p>
+    </div>
+
+    <div class="avisoEnNav"> Este sitio está siendo rediseñado. Si ves algo extraño, ¡es temporal!.
+    </div>
+  </nav>
+
+  <section class="hero padding ">
+
+
+
+
+    <div class="titleHero rotating-letters">
 
       <small>Hola, yo soy </small>
       <span aria-label="Araceli Ponce Sanga " class="allCaps word">Araceli Ponce Sanga</span>
-      <div aria-label="Desarrolladora enfocada en UX/UI" class="allCaps word">Desarrolladora ux/ui</div>
+      <div aria-label="Desarrolladora UX/UI" class="allCaps word">Desarrolladora ux/ui</div>
     </div>
 
-    <div class="alignSelfEnd ">
+    <div class="desktop nav textAlignEnd mb-regular padding">
+      <div></div>
+      <div class="opacity-0">
+        <ul class="flex justifyContentCenter">
+          <li><a href="">
+              QUÉ HAGO
+            </a></li>
+          <li><a href="">
+              QUÉ HERRAMIENTAS USO
+            </a></li>
+          <li><a href="">
+              CÓMO CONTACTARME
 
-      <div class="grid-3-7 textAlignEnd mb-regular gap-0">
-        <div></div>
-        <div class="opacity-0">
-          <p>Aquí encontrarás mis proyectos destacados, mis herramientas y mis datos de contacto</p>
-          <p><b>Disponible para proyectos web a partir de junio de 2023</b></p>
-        </div>
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
       </div>
 
     </div>
-    <p class="tape fixedOnBottom"><span>¡Hola, estoy trabajando en este sitio! Si ves algo extraño, es temporal.</span></p>
+    <style>
+      .desktop.nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        /* padding-bottom: 3rem; */
+      }
+    </style>
+    <!-- <p class="tape fixedOnBottom"><span>¡Hola, estoy trabajando en este sitio! Si ves algo extraño, es temporal.</span></p> -->
 
   </section>
 
 
-  <section class="intro pt10 js-fadeIn dNone">
+  <!-- <section class="intro pt10 js-fadeIn dNone">
     <h2 class="">Enlaces rápidos a</h2>
     <ul class="flex justifyContentCenter js-popUps ">
       <li><a href="">
@@ -105,7 +232,7 @@
           </div>
         </a></li>
     </ul>
-  </section>
+  </section> -->
 
 
 
@@ -295,6 +422,8 @@
       </p>
     </div>
   </footer>
+
+  <!-- </main> -->
   <div class="alwaysGrid">
     <button id="initMatter" class="">jugar</button>
   </div>
@@ -309,8 +438,8 @@
         <input class="" name="input" placeholder="No escribas aquí..." autocomplete="off" required>
         <button class="">
           <i data-icon="arrow-right" aria-hidden="true" class=""><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 8.5h9M8.5 4.5l3.5 4-3.5 4" stroke="currentColor" stroke-width="1.2"></path>
-              <path d="m2.8 8.1 1.9.1 2 .2h5.2M12 8.4c0-.6-.6-.9-1-1.2l-.6-.3-.3-.3-.4-.2-.6-.6-.4-.6-.3-.8M12 8.4c0 .7-.6 1.2-1 1.7l-1.2 1.4-.9.6-.5.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
+              <path d="M3 8.5h9M8.5 4.5l3.5 4-3.5 4" stroke="currentColor" stroke-width="1"></path>
+              <path d="m2.8 8.1 1.9.1 2 .2h5.2M12 8.4c0-.6-.6-.9-1-1.2l-.6-.3-.3-.3-.4-.2-.6-.6-.4-.6-.3-.8M12 8.4c0 .7-.6 1.2-1 1.7l-1.2 1.4-.9.6-.5.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"></path>
             </svg></i>
         </button>
       </div>
@@ -351,9 +480,9 @@
 
 
 
-  <div id="goToTheTop" class="hidden">
+  <!-- <div id="goToTheTop" class="hidden">
     <a href="#">VOLVER ARRIBA</a>
-  </div>
+  </div> -->
 
 
   <div class="dialog-container" id="my-dialog" aria-hidden="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-description">
@@ -369,6 +498,23 @@
 
     </div>
   </div>
+
+
+
+
+  <style>
+    * {
+      background: transparent;
+    }
+
+    #defaultCanvas0 {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+  </style>
 
 </body>
 
