@@ -5,64 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Araceli Ponce Sanga — Portafolio</title>
+  <title>Document</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/113866541">
 
-  <!-- Icono de la aplicación en el entorno de Windows si se agrega a la pantalla de inicio o se muestra en el menú de inicio -->
-  <meta name="msapplication-TileImage" content="https://avatars.githubusercontent.com/u/113866541" />
 
-  <meta name="msapplication-TileColor" content="#222" />
-  <meta name="theme-color" content="#222" />
 
-  <!-- Social info -->
-  <meta property="og:title" content="Portafolio de Araceli Ponce Sanga" />
-  <meta property="og:image" content="images/cover.png" />
-  <meta property="og:description" content="Desarrolladora web especializada en diseño responsive usando Grid y Flexbox" />
-  <meta property="og:url" content="https://araceliponce.github.io/" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="indexPc.min.css">
+  <!-- <link rel="stylesheet" href="swiper.min.css"> -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="main.min.css">
 
-  <!-- Scripts -->
 
-  <script src="indexL.min.js" defer></script>
-  <script src="indexPc.min.js" defer></script>
+  <!-- <script src="script.js" defer></script> -->
+  <script src="script.min.js" defer></script>
 
-  <!-- Matter -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- p5js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Gsap -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
-  <!-- p5js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Matter -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </head>
 
 <body>
-  <div id="loadPanel" class="textCentered">
-
-    <div class="load-content">
-
-      <svg id="loadIcon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M20.27,4.74a4.93,4.93,0,0,1,1.52,4.61,5.32,5.32,0,0,1-4.1,4.51,5.12,5.12,0,0,1-5.2-1.5,5.53,5.53,0,0,0,6.13-1.48A5.66,5.66,0,0,0,20.27,4.74ZM12.32,11.53a5.49,5.49,0,0,0-1.47-6.2A5.57,5.57,0,0,0,4.71,3.72,5.17,5.17,0,0,1,9.53,2.2,5.52,5.52,0,0,1,13.9,6.45,5.28,5.28,0,0,1,12.32,11.53ZM19.2,20.29a4.92,4.92,0,0,1-4.72,1.49,5.32,5.32,0,0,1-4.34-4.05A5.2,5.2,0,0,1,11.6,12.5a5.6,5.6,0,0,0,1.51,6.13A5.63,5.63,0,0,0,19.2,20.29ZM3.79,19.38A5.18,5.18,0,0,1,2.32,14a5.3,5.3,0,0,1,4.59-4,5,5,0,0,1,4.58,1.61,5.55,5.55,0,0,0-6.32,1.69A5.46,5.46,0,0,0,3.79,19.38ZM12.23,12a5.11,5.11,0,0,0,3.66-5,5.75,5.75,0,0,0-3.18-6,5,5,0,0,1,4.42,2.3,5.21,5.21,0,0,1,.24,5.92A5.4,5.4,0,0,1,12.23,12ZM11.76,12a5.18,5.18,0,0,0-3.68,5.09,5.58,5.58,0,0,0,3.19,5.79c-1,.35-2.9-.46-4-1.68A5.51,5.51,0,0,1,11.76,12ZM23,12.63a5.07,5.07,0,0,1-2.35,4.52,5.23,5.23,0,0,1-5.91.2,5.24,5.24,0,0,1-2.67-4.77,5.51,5.51,0,0,0,5.45,3.33A5.52,5.52,0,0,0,23,12.63ZM1,11.23a5,5,0,0,1,2.49-4.5,5.23,5.23,0,0,1,5.81-.06,5.3,5.3,0,0,1,2.61,4.74A5.56,5.56,0,0,0,6.56,8.06,5.71,5.71,0,0,0,1,11.23Z">
-          <animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" begin="0s" />
-        </path>
-      </svg>
-    </div>
 
 
+
+
+
+
+  <div id="points">
+    <script src="points.min.js"></script>
   </div>
 
 
-
-  <!-- <main> -->
-
-
+  <!-- Nav -->
   <nav id="nav" class="mobile opacity-0">
     <a href="#">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
@@ -81,7 +64,7 @@
       <p class="smallest">INICIO</p>
 
     </a>
-    <a href="#proyectos" class="">
+    <a href="#projects" class="">
       <span>Proyectos destacados</span>
       <svg id="laptop" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
@@ -97,7 +80,7 @@
 
     </a>
 
-    <a href="#stack">
+    <a href="#tools">
       <span>herramientas</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
         <g fill="none" stroke="currentColor" stroke-dasharray="14" stroke-dashoffset="14" stroke-linecap="round" stroke-width="1">
@@ -131,7 +114,7 @@
       </svg>
       <p class="smallest">STACK</p>
     </a>
-    <a href="#contacto">
+    <a href="#contact">
       <span>Contacto</span>
       <svg class="opacity-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1">
@@ -165,9 +148,12 @@
     </div>
   </nav>
 
-  <section class="hero padding ">
 
 
+  <!-- Hero -->
+
+
+  <section class="hero ">
 
 
     <div class="titleHero rotating-letters">
@@ -180,64 +166,31 @@
     <div class="desktop nav textAlignEnd mb-regular padding">
       <div></div>
       <div class="opacity-0">
-        <ul class="flex justifyContentCenter">
-          <li><a href="">
+        <ul class=" projectBtns">
+          <li><a href="#projects">
               QUÉ HAGO
             </a></li>
-          <li><a href="">
+          <li><a href="#tools">
               QUÉ HERRAMIENTAS USO
             </a></li>
-          <li><a href="">
+          <li><a href="#contact">
               CÓMO CONTACTARME
 
             </a>
           </li>
         </ul>
-        <!-- </div> -->
       </div>
 
     </div>
-    <style>
-      .desktop.nav {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        /* padding-bottom: 3rem; */
-      }
-    </style>
-    <!-- <p class="tape fixedOnBottom"><span>¡Hola, estoy trabajando en este sitio! Si ves algo extraño, es temporal.</span></p> -->
 
   </section>
 
 
-  <!-- <section class="intro pt10 js-fadeIn dNone">
-    <h2 class="">Enlaces rápidos a</h2>
-    <ul class="flex justifyContentCenter js-popUps ">
-      <li><a href="">
-          <div class="flexCol">
-            <small class="">QUÉ HAGO</small>
-            <span class="title">Proyectos Destacados</span>
-          </div>
-        </a></li>
-      <li><a href="">
-          <div class="flexCol">
-            <small>QUÉ HERRAMIENTAS USO</small>
-            <span class="title">Mis Herramientas</span>
-          </div>
-        </a></li>
-      <li><a href="">
-          <div class="flexCol">
-            <small>CÓMO CONTACTARME</small>
-            <span class="title">Mis datos de contacto</span>
-          </div>
-        </a></li>
-    </ul>
-  </section> -->
+
+  <!-- Projects -->
 
 
-
-
-  <section class="normalContainer pt10 js-fadeIn">
+  <section id="projects" class="normalContainer pt10 js-fadeIn">
 
     <h2 class="titleRegular underlinedWrapper">
       <div>
@@ -246,70 +199,100 @@
       </div>
     </h2>
 
+    <button class="swiper-button-next swiper-button"></button>
+    <button class="swiper-button-prev swiper-button"></button>
 
+    <div class="projects-swiper">
+      <div class="swiper-wrapper">
+        <article class="project swiper-slide">
+
+          <div class="project-image">
+            <div class="scrollingImg" style="background-image: url('images/003.jpg');"></div>
+            <!-- <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button> -->
+          </div>
+
+
+          <h4 class="projectName">Portafolio web <span class="projectStatus">[en desarrollo]</span></h4>
+
+
+          <p>Este sitio</p>
+
+          <ul class="flex textSmall ">
+            <li class="tag">HTML5</li>
+            <li class="tag">CSS3</li>
+            <li class="tag">JAVASCRIPT</li>
+            <li class="tag">GSAP</li>
+            <li class="tag">P5.JS</li>
+            <li class="tag">MATTER.JS</li>
+
+          </ul>
+
+          <div class=" projectBtns">
+            <a href="projectCode">Ver código</a>
+            <a href="projectSite">Ver en la web</a>
+          </div>
+        </article>
+
+        <article class="project swiper-slide">
+
+          <div class="project-image">
+            <div class="scrollingImg" style="background-image: url('images/002.png');"></div>
+            <!-- <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button> -->
+          </div>
+
+
+          <h4 class="projectName">NoteNook <span class="projectStatus">[en desarrollo]</span></h4>
+
+
+          <p>A stylish note-taking haven for your thoughts and ideas.</p>
+
+          <ul class="flex textSmall ">
+            <li class="tag">React</li>
+            <li class="tag">Typescript</li>
+            <li class="tag">css3</li>
+          </ul>
+
+          <div class=" projectBtns">
+            <a href="projectCode">Ver código</a>
+            <a href="projectSite">Ver en la web</a>
+          </div>
+        </article>
+
+        <article class="project swiper-slide">
+
+          <div class="project-image">
+            <div class="scrollingImg" style="background-image: url('images/001.png');"></div>
+            <!-- <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button> -->
+          </div>
+
+
+          <h4 class="projectName">NoteNook <span class="projectStatus">[en desarrollo]</span></h4>
+
+
+          <p>A place where you can tuck away your thoughts and ideas.</p>
+
+          <ul class="flex textSmall ">
+            <li class="tag">React</li>
+            <li class="tag">Typescript</li>
+            <li class="tag">css3</li>
+          </ul>
+
+          <div class=" projectBtns">
+            <a href="projectCode">Ver código</a>
+            <a href="projectSite">Ver en la web</a>
+          </div>
+        </article>
+
+
+      </div>
+
+
+      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
-  </section>
 
-  <section class="100vw  " id="">
-    <article class="project ">
+    <!-- <button class="swiper-button-next swiper-button"></button>
+    <button class="swiper-button-prev swiper-button"></button> -->
 
-      <div class="imgContainer">
-        <img src="images/001.png" alt="" />
-        <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button>
-
-      </div>
-
-      <div class="circleContainer">
-        <div class="circle js-fadeIn">
-
-          <div class="circleText">
-            <h4 class="projectName">FicusJot</h4>
-            <span class="projectStatus">en desarrollo</span>
-            <ul class="flex textSmall justifyContentCenter">
-              <li class="tag">html5</li>
-              <li class="tag">css3</li>
-              <li class="tag">JavaScript</li>
-            </ul>
-            <p>Tu sitio para notas rápidas y navegación optimizada sin complicaciones</p>
-            <div class="botones">
-              <a href="">Ver código</a>
-              <a href="">Ver en la web</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </article>
-
-    <article class="project">
-
-      <div class="imgContainer">
-        <img src="https://cdn.dribbble.com/userupload/3626337/file/original-7b837f0a63a6bced72fab48863f9f16b.png?compress=1&resize=752x" alt="" />
-        <button dialog class="link-like" data-a11y-dialog-show="my-dialog" class="desktop">+</button>
-
-      </div>
-
-      <div class="circleContainer js-fadeIn">
-        <div class="circle">
-
-          <div class="circleText">
-            <h4 class="projectName">SinNombre</h4>
-            <span class="projectStatus">en desarrollo</span>
-            <ul class="flex textSmall justifyContentCenter">
-              <li class="tag">wordpress</li>
-              <li class="tag">css3</li>
-            </ul>
-            <p>Exploración a fondo del CMS Wordpress a través de proyecto de mini e-commerce personal. Aprendiendo sobre temas, plugins y personalización con código propio</p>
-            <div class="botones"></div>
-          </div>
-
-
-        </div>
-      </div>
-
-
-    </article>
 
 
 
@@ -320,7 +303,10 @@
 
 
 
-  <div class="textCenter js-fadeIn pt10">
+
+
+
+  <div id="tools" class="textCenter js-fadeIn pt10">
     <h2 class="titleRegular textCenter">
       <span>Las</span>
       <span class="serif">herramientas</span>
@@ -382,7 +368,7 @@
 
 
 
-  <section class="flex  padding grid-7-3 contact js-fadeIn">
+  <section id="contact" class="flex   grid-5-5 contact js-fadeIn">
     <div class="titleRegular mb-big">
 
       <div class="grid alignContentCenter js-popUps">
@@ -398,19 +384,64 @@
 
     </div>
     <div class="emailsContainer flexCol js-popUps">
+      <div class="inlineSizeContainer js-popUp">
+        <span>Escríbeme a</span>
 
-      <div class="emailsOutro mta flexCol">
-        <p>Escríbeme a <span>aponcesanga@gmail.com</span></p>
-        <p class="textSmall">Son las <span id="timeContainer"></span> para mí, así que si no estoy ocupada te responderé <span id="timeText"></span> :)</p>
+        <div class="multiple-words">
+          <!-- aponcesanga@gmail.com -->
+          <a href="mailto:aponcesanga@gmail.com">aponcesanga@gmail.com</a>
+          <button class="btnCopyEmail" onclick="navigator.clipboard.writeText('aponcesanga@gmail.com')">
+            <svg aria-hidden="true" id="copycon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <g stroke-width="1.5">
+                  <path d="M12 3H19V21H5V3H12Z" />
+                  <path stroke-dasharray="10" stroke-dashoffset="10" d="M9 13L11 15L15 11">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="copycon.click + 0.2s" dur="0.1s" values="10;0" />
+                  </path>
+                </g>
+                <path d="M14.5 3.5V6.5H9.5V3.5" />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="emailsOutro mta flexCol  dNone">
+        <div class="flex">
+          <span>Escríbeme a</span>
+
+          <a href="mailto:aponcesanga@gmail.com">aponcesanga@gmail.com</a>
+
+          <button class="btnCopyEmail" onclick="navigator.clipboard.writeText('aponcesanga@gmail.com')">
+            <svg aria-hidden="true" id="copycon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <g stroke-width="1.5">
+                  <path d="M12 3H19V21H5V3H12Z" />
+                  <path stroke-dasharray="10" stroke-dashoffset="10" d="M9 13L11 15L15 11">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="copycon.click + 0.2s" dur="0.1s" values="10;0" />
+                  </path>
+                </g>
+                <path d="M14.5 3.5V6.5H9.5V3.5" />
+              </g>
+            </svg>
+          </button>
+
+        </div>
+        <!-- <p class="textSmall">Son las <span id="timeContainer"></span> para mí, así que si no estoy ocupada te responderé <span id="timeText"></span> :)</p> -->
+
+
       </div>
     </div>
+
+    <!-- <div class="inlineSizeContainer js-popUp">
+      <div class="multiple-words">aponcesanga@gmail.com</div>
+    </div> -->
   </section>
 
   <footer class="">
     <div class="flex pInline js-popUps">
       <div class="siteLinks mla">
-        <span>También puedes encontrarme en:</span>
-        <a href="https://github.com/araceliponce" target="_blank" rel="noopener noreferrer">Github</a>
+        <span>Diseño y código de </span>
+        <a href="https://github.com/araceliponce" target="_blank" rel="noopener noreferrer">araceliponce</a>
       </div>
     </div>
     <div class="marquee extraSmall rainbow dNone">
@@ -460,29 +491,27 @@
 
     const botonesAbrirModal = document.querySelectorAll('button[dialog]');
 
-    botonesAbrirModal.forEach((boton) => {
-      boton.addEventListener('click', () => {
-        // Obtenemos la imagen del artículo actual y su src
-        const projectImage = boton.parentNode.querySelector('img');
-        console.log(projectImage)
+    if (botonesAbrirModal) {
 
-        const srcProjectImage = projectImage.getAttribute('src');
+      botonesAbrirModal.forEach((boton) => {
+        boton.addEventListener('click', () => {
+          // Obtenemos la imagen del artículo actual y su src y lo pasamos al dialog
+          // const projectImage = boton.parentNode.querySelector('img');
+          // const srcProjectImage = projectImage.getAttribute('src');
+          // const dialogImage = document.getElementById('dialogImage');
+          // dialogImage.setAttribute('src', srcProjectImage);
 
-        // Y lo clonamos en la imagen dentro del dialogEl
-        const dialogImage = document.getElementById('dialogImage');
+          const projectImage = boton.parentNode.querySelector('.scrollingImg');
+          const backgroundImage = projectImage.style.getPropertyValue('background-image');
 
-        dialogImage.setAttribute('src', srcProjectImage);
+          const dialogImage = document.getElementById('dialogImg');
+          dialogImage.style.backgroundImage = backgroundImage;
 
+        });
       });
-    });
+    }
 
   </script>
-
-
-
-  <!-- <div id="goToTheTop" class="hidden">
-    <a href="#">VOLVER ARRIBA</a>
-  </div> -->
 
 
   <div class="dialog-container" id="my-dialog" aria-hidden="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-description">
@@ -494,28 +523,89 @@
         </svg>
       </button>
 
-      <img id="dialogImage" src="https://cdn.dribbble.com/userupload/3626337/file/original-7b837f0a63a6bced72fab48863f9f16b.png?compress=1&resize=752x" alt="" />
+      <!-- <img id="dialogImage" src="https://cdn.dribbble.com/userupload/3626337/file/original-7b837f0a63a6bced72fab48863f9f16b.png?compress=1&resize=752x" alt="" /> -->
 
+      <div class="imgContainer">
+        <div id="dialogImg" class="scrollingImg relative"></div>
+
+      </div>
     </div>
   </div>
 
 
 
 
-  <style>
-    * {
-      background: transparent;
-    }
 
-    #defaultCanvas0 {
-      position: fixed;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -1;
-    }
-  </style>
 
+
+
+
+
+
+
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+
+  <!-- SWIPER -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Client Swiper -->
+  <script>
+
+    // Initialize Testimonial Swiper
+    var swiper2 = new Swiper('.projects-swiper', {
+      slidesPerView: 1,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 30,
+      freeMode: true,
+      // nextButton: '.swiper-button-next',
+      // prevButton: '.swiper-button-prev',
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      loop: true,
+      a11y: true,
+      keyboardControl: true,
+      grabCursor: true,
+
+      breakpoints: {
+        // when window width is <= 700px
+        700: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // when window width is <= 1200px
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        // when window width is <= 1600px
+        1600: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        },
+        // when window width is <= 2400px
+        2400: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        }
+
+
+      }
+    });
+  </script>
 </body>
 
 </html>
