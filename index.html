@@ -5,22 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Araceli Ponce Sanga</title>
 
 
+  <!-- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="swiper.min.css"> -->
 
-
-
-  <!-- <link rel="stylesheet" href="swiper.min.css"> -->
-  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="main.min.css">
+
+
+
+
+  <!-- p5js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="points.min.js" defer></script>
 
 
   <!-- <script src="script.js" defer></script> -->
   <script src="script.min.js" defer></script>
 
-  <!-- p5js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Gsap -->
 
@@ -40,133 +43,25 @@
 
 
 
-  <div id="points">
-    <script src="points.min.js"></script>
-  </div>
-
-
-  <!-- Nav -->
-  <nav id="nav" class="mobile opacity-0">
-    <a href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
-          <path stroke-dasharray="21" stroke-dashoffset="21" d="M5 21H19">
-            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="21;0" begin="5s" />
-          </path>
-          <path stroke-dasharray="15" stroke-dashoffset="15" d="M5 21V8M19 21V8">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.2s" dur="0.2s" values="15;0" />
-          </path>
-          <path stroke-dasharray="26" stroke-dashoffset="26" d="M2 10L12 2L22 10">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.5s" dur="0.4s" values="26;0" />
-          </path>
-        </g>
-      </svg>
-      <p class="smallest">INICIO</p>
-
-    </a>
-    <a href="#projects" class="">
-      <span>Proyectos destacados</span>
-      <svg id="laptop" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
-          <path stroke-dasharray="50" stroke-dashoffset="50" d="M12 17H5V7H19V17Z">
-            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="50;0" begin="5.2s" />
-          </path>
-          <path stroke-dasharray="20" stroke-dashoffset="20" d="M3 19H21">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.8s" dur="0.3s" values="20;0" />
-          </path>
-        </g>
-      </svg>
-      <p class="smallest">PROYECTOS</p>
-
-    </a>
-
-    <a href="#tools">
-      <span>herramientas</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-dasharray="14" stroke-dashoffset="14" stroke-linecap="round" stroke-width="1">
-          <path d="M8 5H20">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.1s" dur="0.2s" values="14;0" />
-          </path>
-          <path d="M8 10H20">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.4s" dur="0.2s" values="14;0" />
-          </path>
-          <path d="M8 15H20">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.7s" dur="0.2s" values="14;0" />
-          </path>
-          <path d="M8 20H20">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="6s" dur="0.2s" values="14;0" />
-          </path>
-        </g>
-        <g fill="currentColor" fill-opacity="0">
-          <circle cx="4" cy="5" r="1">
-            <animate fill="freeze" attributeName="fill-opacity" begin="5s" dur="0.2s" values="0;1" />
-          </circle>
-          <circle cx="4" cy="10" r="1">
-            <animate fill="freeze" attributeName="fill-opacity" begin="5.3s" dur="0.2s" values="0;1" />
-          </circle>
-          <circle cx="4" cy="15" r="1">
-            <animate fill="freeze" attributeName="fill-opacity" begin="5.6s" dur="0.2s" values="0;1" />
-          </circle>
-          <circle cx="4" cy="20" r="1">
-            <animate fill="freeze" attributeName="fill-opacity" begin="5.9s" dur="0.2s" values="0;1" />
-          </circle>
-        </g>
-      </svg>
-      <p class="smallest">STACK</p>
-    </a>
-    <a href="#contact">
-      <span>Contacto</span>
-      <svg class="opacity-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1">
-          <rect width="18" height="14" x="3" y="5" stroke-dasharray="64" stroke-dashoffset="64" rx="1">
-            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" begin="5.4s" />
-          </rect>
-          <path stroke-dasharray="24" stroke-dashoffset="24" d="M3 6.5L12 12L21 6.5">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="6s" dur="0.4s" values="24;0" />
-          </path>
-        </g>
-      </svg>
-      <p class="smallest">CONTACTO</p>
-
-
-    </a>
-    <div class="hidemeDiv">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-dasharray="10" stroke-dashoffset="10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
-          <path d="M5 12L12 5M5 12L12 19">
-            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="10;0" begin="5" />
-          </path>
-          <path d="M11 12L18 5M11 12L18 19">
-            <animate fill="freeze" attributeName="stroke-dashoffset" begin="5.3s" dur="0.3s" values="10;0" />
-          </path>
-        </g>
-      </svg>
-      <p class="smallest">SLIDE ME</p>
-    </div>
-
-    <div class="avisoEnNav"> Este sitio está siendo rediseñado. Si ves algo extraño, ¡es temporal!.
-    </div>
-  </nav>
-
 
 
   <!-- Hero -->
 
 
-  <section class="hero ">
+  <section class="hero">
 
 
-    <div class="titleHero rotating-letters">
+    <div class="titleHero rotating-letters alignSelfCenter">
 
-      <small>Hola, yo soy </small>
-      <span aria-label="Araceli Ponce Sanga " class="allCaps word">Araceli Ponce Sanga</span>
-      <div aria-label="Desarrolladora UX/UI" class="allCaps word">Desarrolladora ux/ui</div>
+      <small class="opacity-0">Hola, yo soy </small>
+      <span aria-label="Araceli Ponce Sanga  " class="allCaps word opacity-0">Araceli Ponce Sanga</span>
+      <div aria-label="Desarrolladora UX/UI" class="allCaps word opacity-0">Desarrolladora ux/ui</div>
     </div>
 
-    <div class="desktop nav textAlignEnd mb-regular padding">
-      <div></div>
+
+    <nav id="mainNav" class="alignSelfEnd">
       <div class="opacity-0">
-        <ul class=" projectBtns">
+        <ul class=" btns">
           <li><a href="#projects">
               QUÉ HAGO
             </a></li>
@@ -181,26 +76,57 @@
         </ul>
       </div>
 
-    </div>
+    </nav>
 
   </section>
+
+
 
 
 
   <!-- Projects -->
 
 
-  <section id="projects" class="normalContainer pt10 js-fadeIn">
+  <section id="projects" class="normalContainer mt10 js-fadeIn">
 
-    <h2 class="titleRegular underlinedWrapper">
-      <div>
-        <span>Proyectos</span>
-        <span class="serif">Destacados</span>
+    <div class="grid-5-5">
+
+      <h2 class="titleRegular underlinedWrapper">
+        <div>
+          <span>Proyectos Destacados</span>
+        </div>
+      </h2>
+
+      <div id="swiper-buttons" class="alignItemsCenter">
+
+        <button class="swiper-button-prev swiper-button">
+          <svg id="arrowPrev" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path stroke-dasharray="20" stroke-dashoffset="20" d="M21 12H3.5">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="20;0" />
+              </path>
+              <path stroke-dasharray="12" stroke-dashoffset="12" d="M3 12L10 19M3 12L10 5">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.2s" values="12;0" />
+              </path>
+            </g>
+          </svg>
+        </button>
+
+        <button class="swiper-button-next swiper-button">
+          <svg id="arrowNext" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path stroke-dasharray="20" stroke-dashoffset="20" d="M21 12H3.5">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="20;0" />
+              </path>
+              <path stroke-dasharray="12" stroke-dashoffset="12" d="M3 12L10 19M3 12L10 5">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.2s" values="12;0" />
+              </path>
+            </g>
+          </svg>
+        </button>
+
       </div>
-    </h2>
-
-    <button class="swiper-button-next swiper-button"></button>
-    <button class="swiper-button-prev swiper-button"></button>
+    </div>
 
     <div class="projects-swiper">
       <div class="swiper-wrapper">
@@ -217,7 +143,7 @@
 
           <p>Este sitio</p>
 
-          <ul class="flex textSmall ">
+          <ul class="tags  ">
             <li class="tag">HTML5</li>
             <li class="tag">CSS3</li>
             <li class="tag">JAVASCRIPT</li>
@@ -227,9 +153,9 @@
 
           </ul>
 
-          <div class=" projectBtns">
-            <a href="projectCode">Ver código</a>
-            <a href="projectSite">Ver en la web</a>
+          <div class=" btns">
+            <a class="projectCode" href="https://github.com/araceliponce/araceliponce.github.io">Ver código</a>
+            <!-- <a class="projectSite" href="#">Ver en la web</a> -->
           </div>
         </article>
 
@@ -252,9 +178,9 @@
             <li class="tag">css3</li>
           </ul>
 
-          <div class=" projectBtns">
-            <a href="projectCode">Ver código</a>
-            <a href="projectSite">Ver en la web</a>
+          <div class=" btns">
+            <a class="projectCode" href="#">Ver código</a>
+            <a class="projectSite" href="#">Ver en la web</a>
           </div>
         </article>
 
@@ -277,9 +203,9 @@
             <li class="tag">css3</li>
           </ul>
 
-          <div class=" projectBtns">
-            <a href="projectCode">Ver código</a>
-            <a href="projectSite">Ver en la web</a>
+          <div class=" btns">
+            <a class="projectCode" href="https://github.com/araceliponce/notenook">Ver código</a>
+            <a class="projectSite" href="https://araceliponce.github.io/notenook/">Ver sitio web</a>
           </div>
         </article>
 
@@ -306,178 +232,179 @@
 
 
 
-  <div id="tools" class="textCenter js-fadeIn pt10">
-    <h2 class="titleRegular textCenter">
-      <span>Las</span>
-      <span class="serif">herramientas</span>
-      <span>que uso</span>
-    </h2>
-  </div>
-  <section class="padding-inline tools js-fadeIn">
+  <section id="tools" class="textCenter js-fadeIn pt10">
 
-    <div class="mba grid-3-7">
+
+
+    <h2 class="titleRegular underlinedWrapper mb-big">
       <div>
+        <span>Herramientas</span>
       </div>
-      <div class="">
+    </h2>
 
-        <section class="faq ">
-          <dl class="">
-            <dt><button aria-controls="uxui" aria-expanded="true" data-accordion-header>
-                <span>Diseño UX/UI</span>
-                <div class="accordionIcon">
-                  <div class="line"></div>
+
+
+    <section class=" js-fadeIn">
+
+      <div class="mba grid-3-7">
+        <div>
+        </div>
+        <div class="">
+
+          <section class="faq ">
+            <dl class="">
+              <dt><button aria-controls="uxui" aria-expanded="true" data-accordion-header>
+                  <span>Diseño UX/UI</span>
+                  <div class="accordionIcon">
+                    <div class="line"></div>
+                  </div>
+                </button></dt>
+              <dd id="uxui">
+                <!-- dd is hidden, using an inside container for flex or grid -->
+                <div class="flexCol">
+                  <div class="flex alignItemsCenter pt-2 js-popUps tags">
+                    <span class="tag">Figma</span>
+                    <span class="tag">Framer</span>
+                    <span class="tag">Wordpress</span>
+                    <span class="tag">Papel y lápiz</span>
+                  </div>
                 </div>
-              </button></dt>
-            <dd id="uxui">
-              <!-- dd is hidden, using an inside container for flex or grid -->
-              <div class="flexCol">
-                <div class="flex alignItemsCenter pt-2 js-popUps tags">
-                  <span class="tag">Figma</span>
-                  <span class="tag">Framer</span>
-                  <span class="tag">Wordpress</span>
-                  <span class="tag">Papel y lápiz</span>
+              </dd>
+
+              <dt><button aria-controls="desWeb" aria-expanded="true" data-accordion-header class="">
+                  <span>Desarrollo web</span>
+                  <div class="accordionIcon">
+                    <div class="line"></div>
+                  </div>
+                </button></dt>
+              <dd id="desWeb">
+                <div class="flexCol">
+                  <div class="flex alignItemsCenter pt-2 js-popUps tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">JQuery</span>
+                    <span class="tag">TypeScript</span>
+
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">Angular Material</span>
+                    <span class="tag">Mantine</span>
+
+                    <span class="tag">Jekyll y Liquid</span>
+                    <span class="tag">Angular</span>
+                    <span class="tag">React</span>
+                  </div>
                 </div>
-              </div>
-            </dd>
+              </dd>
+            </dl>
+          </section>
 
-            <dt><button aria-controls="desWeb" aria-expanded="true" data-accordion-header class="">
-                <span>Desarrollo web</span>
-                <div class="accordionIcon">
-                  <div class="line"></div>
-                </div>
-              </button></dt>
-            <dd id="desWeb">
-              <div class="flexCol">
-                <div class="flex alignItemsCenter pt-2 js-popUps tags">
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">Angular y Typescript</span>
-                  <span class="tag">Bootstrap</span>
-                  <span class="tag">Angular Material</span>
-                  <span class="tag">Jekyll y Liquid</span>
-                </div>
-              </div>
-            </dd>
-          </dl>
-        </section>
-
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="contact" class="flex   grid-5-5 contact js-fadeIn">
-    <div class="titleRegular mb-big">
-
-      <div class="grid alignContentCenter js-popUps">
-        <h1>
-          <span class="serif">Araceli Ponce Sanga.</span>
-          <div class="underlined">Desarrolladora web</div>
-          <div class="h-0">y <span id="changingText"></span></div>
-        </h1>
-      </div>
-
-
-
-
-    </div>
-    <div class="emailsContainer flexCol js-popUps">
-      <div class="inlineSizeContainer js-popUp">
-        <span>Escríbeme a</span>
-
-        <div class="multiple-words">
-          <!-- aponcesanga@gmail.com -->
-          <a href="mailto:aponcesanga@gmail.com">aponcesanga@gmail.com</a>
-          <button class="btnCopyEmail" onclick="navigator.clipboard.writeText('aponcesanga@gmail.com')">
-            <svg aria-hidden="true" id="copycon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <g stroke-width="1.5">
-                  <path d="M12 3H19V21H5V3H12Z" />
-                  <path stroke-dasharray="10" stroke-dashoffset="10" d="M9 13L11 15L15 11">
-                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="copycon.click + 0.2s" dur="0.1s" values="10;0" />
-                  </path>
-                </g>
-                <path d="M14.5 3.5V6.5H9.5V3.5" />
-              </g>
-            </svg>
-          </button>
         </div>
       </div>
-      <div class="emailsOutro mta flexCol  dNone">
-        <div class="flex">
+    </section>
+
+
+
+    <section id="contact" class="flex   grid-5-5 contact js-fadeIn">
+      <div class="titleRegular mb-big">
+
+        <div class="grid alignContentCenter js-popUps">
+          <h1>
+            <span class="serif">Araceli Ponce Sanga.</span>
+            <div class="underlined">Desarrolladora web</div>
+            <div class="h-0">y <span id="changingText"></span></div>
+          </h1>
+        </div>
+
+
+
+
+      </div>
+      <div class="emailsContainer flexCol js-popUps">
+        <div class="inlineSizeContainer js-popUp">
           <span>Escríbeme a</span>
 
-          <a href="mailto:aponcesanga@gmail.com">aponcesanga@gmail.com</a>
-
-          <button class="btnCopyEmail" onclick="navigator.clipboard.writeText('aponcesanga@gmail.com')">
-            <svg aria-hidden="true" id="copycon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <g stroke-width="1.5">
-                  <path d="M12 3H19V21H5V3H12Z" />
-                  <path stroke-dasharray="10" stroke-dashoffset="10" d="M9 13L11 15L15 11">
-                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="copycon.click + 0.2s" dur="0.1s" values="10;0" />
-                  </path>
+          <div class="multiple-words">
+            <!-- aponcesanga@gmail.com -->
+            <a href="mailto:aponcesanga@gmail.com">aponcesanga@gmail.com</a>
+            <button class="btnCopyEmail" onclick="navigator.clipboard.writeText('aponcesanga@gmail.com')">
+              <svg aria-hidden="true" id="copycon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <g stroke-width="1.5">
+                    <path d="M12 3H19V21H5V3H12Z" />
+                    <path stroke-dasharray="10" stroke-dashoffset="10" d="M9 13L11 15L15 11">
+                      <animate fill="freeze" attributeName="stroke-dashoffset" begin="copycon.click + 0.2s" dur="0.1s" values="10;0" />
+                    </path>
+                  </g>
+                  <path d="M14.5 3.5V6.5H9.5V3.5" />
                 </g>
-                <path d="M14.5 3.5V6.5H9.5V3.5" />
-              </g>
-            </svg>
-          </button>
-
+              </svg>
+            </button>
+          </div>
         </div>
-        <!-- <p class="textSmall">Son las <span id="timeContainer"></span> para mí, así que si no estoy ocupada te responderé <span id="timeText"></span> :)</p> -->
-
 
       </div>
-    </div>
 
-    <!-- <div class="inlineSizeContainer js-popUp">
+      <!-- <div class="inlineSizeContainer js-popUp">
       <div class="multiple-words">aponcesanga@gmail.com</div>
     </div> -->
-  </section>
+    </section>
 
-  <footer class="">
-    <div class="flex pInline js-popUps">
-      <div class="siteLinks mla">
-        <span>Diseño y código de </span>
-        <a href="https://github.com/araceliponce" target="_blank" rel="noopener noreferrer">araceliponce</a>
+
+
+
+
+
+
+    <footer class="">
+      <div class="flex pInline js-popUps">
+        <div class="siteLinks mla">
+          <span>Diseño y código de </span>
+          <a href="https://github.com/araceliponce" target="_blank" rel="noopener noreferrer">araceliponce</a>
+        </div>
       </div>
-    </div>
-    <div class="marquee extraSmall rainbow dNone">
-      <p class="marqueeItems">
-        <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
-        <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
-        <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
-        <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
-      </p>
-    </div>
-  </footer>
+      <div class="marquee extraSmall rainbow dNone">
+        <p class="marqueeItems">
+          <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
+          <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
+          <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
+          <span><strong>Desarrollado con </strong> HTML, CSS3, JavaScript, GSAP, y Matter.js. <strong>Alojado en </strong>Github Pages. </span>
+        </p>
+      </div>
+    </footer>
 
-  <!-- </main> -->
-  <div class="alwaysGrid">
-    <button id="initMatter" class="">jugar</button>
-  </div>
-  <div id="matterContainer" class="hidden">
-    <span class="in-matter block" id="bb">FLEXBOX</span>
-    <span class="in-matter block" id="c">HTML5</span>
-    <span class="in-matter block" id="d">GRID</span>
-    <span class="in-matter block" id="d">JAVASCRIPT</span>
-    <span class="in-matter block">MATTER.JS</span>
-    <form class="in-matter block">
-      <div class="matterTextContainer">
-        <input class="" name="input" placeholder="No escribas aquí..." autocomplete="off" required>
+    <!-- </main> -->
+    <div class="alwaysGrid">
+      <!-- <button id="initMatter" class="">
+      <span>JUGAR</span> 
+    </button> -->
+      <div id="initMatter" class="relative">
         <button class="">
-          <i data-icon="arrow-right" aria-hidden="true" class=""><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 8.5h9M8.5 4.5l3.5 4-3.5 4" stroke="currentColor" stroke-width="1"></path>
-              <path d="m2.8 8.1 1.9.1 2 .2h5.2M12 8.4c0-.6-.6-.9-1-1.2l-.6-.3-.3-.3-.4-.2-.6-.6-.4-.6-.3-.8M12 8.4c0 .7-.6 1.2-1 1.7l-1.2 1.4-.9.6-.5.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"></path>
-            </svg></i>
+          <span>JUGAR</span>
         </button>
+        <a href="#" id="goToTheTop" class="hidden">Go to the top</a>
       </div>
-    </form>
-  </div>
+    </div>
+    <div id="matterContainer" class="hidden">
+      <span class="in-matter block" id="bb">FLEXBOX</span>
+      <span class="in-matter block" id="c">HTML5</span>
+      <span class="in-matter block" id="d">GRID</span>
+      <span class="in-matter block" id="d">JAVASCRIPT</span>
+      <span class="in-matter block">MATTER.JS</span>
+      <form class="in-matter block">
+        <div class="matterTextContainer">
+          <input class="" name="input" placeholder="No escribas aquí..." autocomplete="off" required>
+          <button class="">
+            <i data-icon="arrow-right" aria-hidden="true" class=""><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8.5h9M8.5 4.5l3.5 4-3.5 4" stroke="currentColor" stroke-width="1"></path>
+                <path d="m2.8 8.1 1.9.1 2 .2h5.2M12 8.4c0-.6-.6-.9-1-1.2l-.6-.3-.3-.3-.4-.2-.6-.6-.4-.6-.3-.8M12 8.4c0 .7-.6 1.2-1 1.7l-1.2 1.4-.9.6-.5.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"></path>
+              </svg></i>
+          </button>
+        </div>
+      </form>
+    </div>
 
-  <script type="module">
+    <!--   <script type="module">
     /* https://a11y-dialog.netlify.app/installation */
     import A11yDialog from 'https://cdn.jsdelivr.net/npm/a11y-dialog@7/dist/a11y-dialog.esm.min.js'
 
@@ -511,26 +438,26 @@
       });
     }
 
-  </script>
+  </script> -->
 
 
-  <div class="dialog-container" id="my-dialog" aria-hidden="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-description">
-    <div class="dialog-overlay" data-a11y-dialog-hide></div>
-    <div class="dialog-content" role="document">
-      <button data-a11y-dialog-hide class="dialog-close" aria-label="Close this dialog window">
-        <svg class="svg-icon" viewBox="0 0 20 20">
-          <path fill="currentcolor" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
-        </svg>
-      </button>
+    <div class="dialog-container" id="my-dialog" aria-hidden="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-description">
+      <div class="dialog-overlay" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="document">
+        <button data-a11y-dialog-hide class="dialog-close" aria-label="Close this dialog window">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path fill="currentcolor" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+          </svg>
+        </button>
 
-      <!-- <img id="dialogImage" src="https://cdn.dribbble.com/userupload/3626337/file/original-7b837f0a63a6bced72fab48863f9f16b.png?compress=1&resize=752x" alt="" /> -->
+        <!-- <img id="dialogImage" src="https://cdn.dribbble.com/userupload/3626337/file/original-7b837f0a63a6bced72fab48863f9f16b.png?compress=1&resize=752x" alt="" /> -->
 
-      <div class="imgContainer">
-        <div id="dialogImg" class="scrollingImg relative"></div>
+        <div class="imgContainer">
+          <div id="dialogImg" class="scrollingImg relative"></div>
 
+        </div>
       </div>
     </div>
-  </div>
 
 
 
@@ -545,67 +472,65 @@
 
 
 
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-  <!-- SWIPER -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    <!-- Initialize Client Swiper -->
+    <script>
 
+      // Initialize Testimonial Swiper
+      var swiper2 = new Swiper('.projects-swiper', {
+        slidesPerView: 1,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true,
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
 
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Client Swiper -->
-  <script>
-
-    // Initialize Testimonial Swiper
-    var swiper2 = new Swiper('.projects-swiper', {
-      slidesPerView: 1,
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      spaceBetween: 30,
-      freeMode: true,
-      // nextButton: '.swiper-button-next',
-      // prevButton: '.swiper-button-prev',
-
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      loop: true,
-      a11y: true,
-      keyboardControl: true,
-      grabCursor: true,
-
-      breakpoints: {
-        // when window width is <= 700px
-        700: {
-          slidesPerView: 1,
-          spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-        // when window width is <= 1200px
-        1200: {
-          slidesPerView: 2,
-          spaceBetween: 10
-        },
-        // when window width is <= 1600px
-        1600: {
-          slidesPerView: 3,
-          spaceBetween: 10
-        },
-        // when window width is <= 2400px
-        2400: {
-          slidesPerView: 4,
-          spaceBetween: 10
+
+        loop: true,
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+
+        breakpoints: {
+          // when window width is <= 700px
+          700: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is <= 1200px
+          1000: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          // when window width is <= 1600px
+          1800: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          // when window width is <= 2400px
+          2800: {
+            slidesPerView: 4,
+            spaceBetween: 10
+          }
+
+
         }
+      });
+    </script>
 
 
-      }
-    });
-  </script>
+
+
+
 </body>
 
 </html>
