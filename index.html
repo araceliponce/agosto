@@ -18,8 +18,26 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <link rel="stylesheet" href="/css/main.min.css">
-  <script src="/js/vendor.min.js" defer></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="/js/supabase.min.js" type="module"></script>
   <script src="/js/main.min.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300" rel="stylesheet">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rufina&family=Poppins&family=Signika&family=PT+Serif&family=Anton&family=Work+Sans&display=swap" rel="stylesheet">
+
+  <!-- jquery -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
 </head>
 
@@ -27,7 +45,7 @@
   <nav class="fixed-top">
     <ul id="navigationUl" class="">
       <li class="nav-li">
-        <a href="#top">ARRIBA</a>
+        <a href="#top">INICIO</a>
       </li>
       <li class="nav-li ">
         <a href="#projects">PROYECTOS</a>
@@ -43,24 +61,32 @@
   </nav>
   <button id="circle" class=" delay1 animated  fadeIn8"></button>
 
+
+
   <section id="top">
     <div class="hero fadeInDown animated">
       <div>
-        <h1 class=" hero-name gradient">
+        <h1 class="hero-name gradient">
           <span>araceli ponce sanga</span>
         </h1>
-        <p class="gradient small">desarrolladora web ux/ui</p>
+        <div class="small">
+          <small>Desarrolladora web UX/UI</small>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2 class="card-title">PROYECTOS</h2>
+  <a href="#projects" class="btn--scroll-down">explorar portafolio</a>
 
-    <div class="autogrid">
+
+  <section id="projects">
+    <h2 class="card-title--big">PROYECTOS</h2>
+
+    <div class="autogrid mt-3">
       <div class="">
-        <article class="project-card fadeInUp delay2 animated">
-          <h2 class="card-title">NoteNook</h2>
+        <article class="project-card scroll-reveal scroll--fadeinUp">
+
+          <h3 class="card-title">NoteNook</h3>
           <div class="scrollingImgWrapper" data-last-update="2023">
             <img class="scrollingImg" alt="captura de pantalla de proyecto" src="/images/002.png">
           </div>
@@ -68,7 +94,7 @@
             <a class="project-button mt-small" href="https://araceliponce.github.io/notenook/">Ver sitio web →</a>
             <a class="project-button mt-small" href="https://github.com/araceliponce/notenook">Ver repositorio →</a>
           </div>
-          <div class="grid">
+          <div class="grid gap-1">
             <p class="card-description">Aplicación web minimalista y responsive para tomar notas y asignarles etiquetas, con funcionalidades de búsqueda y filtrado, y un diseño de layout masonry.</p>
             <ul class="m-0-p-0 small project-tags">
               <li>REACT</li>
@@ -85,15 +111,18 @@
 
 
 
-      <div class=" fadeInUp delay2 animated">
-        <article class="project-card fadeInUp delay2 animated">
-          <h2 class="card-title">TomatoJoy</h2>
+      <div>
+        <article class="project-card scroll-reveal scroll--fadeinUp">
+          <h3 class="card-title">TomatoJoy</h3>
           <div class="scrollingImgWrapper" data-last-update="2023">
-            <img class="scrollingImg" alt="captura de pantalla de proyecto" src="/images/002.png">
+            <img class="scrollingImg" alt="captura de pantalla de proyecto" src="/images/l-tomato.png" style="transition-duration: 10s;">
           </div>
-          <div class="project-buttons"></div>
-          <div class="grid">
-            <p class="card-description">Sitio web de e-commerce donde puedes hacer pedidos y recibir productos naturales a la puerta de tu casa</p>
+          <div class="project-buttons">
+            <a class="project-button mt-small" href="https://araceliponce.github.io/tomatojoy/">Ver sitio web →</a>
+            <a class="project-button mt-small" href="https://github.com/araceliponce/tomatojoy">Ver repositorio →</a>
+          </div>
+          <div class="grid gap-1">
+            <p class="card-description ">Sitio web de e-commerce donde puedes hacer pedidos y recibir productos naturales a la puerta de tu casa</p>
             <ul class="m-0-p-0 small project-tags">
               <li>VUE</li>
               <li>VUETIFY</li>
@@ -106,42 +135,33 @@
           </div>
         </article>
       </div>
-      <div class=" fadeInUp delay2 animated ">
+      <div>
 
-        <article class="project-card fadeInUp delay2 animated ">
-          <h2 class="card-title">Portafolio</h2>
-          <div class="scrollingImgWrapper" data-last-update="2023">
-            <img class="scrollingImg" alt="captura de pantalla de proyecto" src="/images/002.png">
-          </div>
-          <div class="project-buttons">
-            <a class="project-button mt-small" href="https://github.com/araceliponce/araceliponce.github.io">Ver sitio web →</a>
-          </div>
-          <div class="grid">
-            <p class="card-description">Este portafolio</p>
-            <ul class="m-0-p-0 small project-tags">
-              <li>HTML5</li>
-              <li>SCSS</li>
-              <li>JQUERY</li>
-              <li>DISEÑO UX/UI</li>
-              <li>MAQUETADO WEB</li>
-            </ul>
-          </div>
-        </article>
+
       </div>
 
-      <div class=" fadeInUp delay2 animated">
+      <div class="">
 
+
+      </div>
+  </section>
+
+  <section id="about">
+    <h2 class="card-title--big">ACERCA</h2>
+
+    <div class="wrapper mt-3">
+      <div class="box educa scroll-reveal scroll--fadeinUp">
         <article class="project-card grid  ">
-          <div class="card-title">Stack resumido</div>
-          <section class="fadeInUp delay2 animated ">
-            <dl class="">
-              <dt><button aria-controls="uxui" aria-expanded="true" data-accordion-header>
+          <div class="card-title--small">Stack resumido</div>
+          <section class="">
+            <dl>
+              <dt class="scroll-reveal scroll--fadeinUp"><button aria-controls="uxui" aria-expanded="true" data-accordion-header>
                   <span>Diseño UX/UI</span>
                   <div class="accordionIcon">
                     <div class="line"></div>
                   </div>
                 </button></dt>
-              <dd id="uxui">
+              <dd id="uxui" class="scroll-reveal scroll--fadeinUp">
                 <!-- dd is hidden, using an inside container for flex or grid -->
                 <div class="flexCol">
                   <div class="m-0-p-0 small project-tags">
@@ -153,13 +173,13 @@
                 </div>
               </dd>
 
-              <dt><button aria-controls="desWeb" aria-expanded="true" data-accordion-header class="">
+              <dt class="scroll-reveal scroll--fadeinUp"><button aria-controls="desWeb" aria-expanded="true" data-accordion-header class="">
                   <span>Desarrollo web</span>
                   <div class="accordionIcon">
                     <div class="line"></div>
                   </div>
                 </button></dt>
-              <dd id="desWeb">
+              <dd class="scroll-reveal scroll--fadeinUp" id="desWeb">
                 <div class="grid">
                   <div class="m-0-p-0 small project-tags">
                     <span>HTML5</span>
@@ -188,39 +208,45 @@
 
         </article>
       </div>
-  </section>
+      <div class="box habi scroll-reveal scroll--fadeinUp">
+        <div class="card-title--small">ESTUDIOS</div>
 
-  <section id="about">
-    <div class="">
-      <div class="animated fadeInUp">
-        <div class="">
-          <h2 class="card-title">ACERCA DE MÍ</h2>
-          <p>¡Hola! Soy Araceli y soy una <strong>desarrolladora web</strong> con 1 año de experiencia <strong>diseñando </strong> interfaces web y <strong>maquetando</strong> usando Grid, Flexbox, y algo de Javascript (o JQuery, o TypeScript). Además, cuento con formación universitaria en Administración.</p>
+        <ul>
+          <li>
+            <p> Desarrollo web front end, en CERTUS</p>
+          </li>
+          <li>
+            <p>Administración Turística Hotelera, en Universidad Privada de Tacna</p>
+          </li>
+        </ul>
 
-          <small class="card-title--small">Formación</small>
-          <p>Mi formación en desarrollo web inició formalmente cuando gané una de las Becas Jóvenes Bicentenario, por lo que pude estudiar en CERTUS por 5-6 meses, de forma remota. Allí estudié las bases de la programación y a usar HTML, CSS, JS y Angular, entre otras tecnologías.</p>
 
-          <p>Recientemente, también obtuve mi título en Administración Turística y Hotelera, que estudié gracias a Beca 18.</p>
+      </div>
+      <div class="box trabajo scroll-reveal scroll--fadeinUp">
+        <div class="card-title--small">TRABAJOS ANTERIORES</div>
 
-          <p>En la actualidad, me encuentro desarrollando distintos miniproyectos que ire añadiendo a este portafolio.</p>
+        <ul>
 
-          <small class="card-title--small">Habilidades</small>
-          <p>Me han dicho que tengo talento para investigar, escribir y mantenerme organizada. Quizás gracias a eso he podido disfrutar de la mayoría de mis trabajos, como: traductora, subtituladora, copywriter, asistente de community manager, y (recientemente) desarrolladora ux/ui independiente.</p>
+          <li>Desarrolladora UX/UI independiente</li>
+          <li>Copywriter</li>
+          <li>Traductora</li>
+          <li>Subtituladora</li>
+        </ul>
+      </div>
+      <div class="box final scroll-reveal scroll--fadeinUp">
+        <div class="text-center">
+          <p class="card-title--small">Actualmente tengo tiempo libre!</p>
 
-          <p>Además de programar, también me encanta cuidar de mis mascotas y de las plantas en mi casa, además de leer o dibujar.</p>
-
-          <small class="card-title--small">Nota final</small>
-          <p>Actualmente, tengo tiempo libre, así que si tienes alguna pregunta o algún proyecto en el que pueda ayudarte, <a href="#contact">¡contáctame!</a></p>
-
+          <p>Si tienes alguna pregunta o algún proyecto en el que pueda ayudarte, no dudes en <a href="#contact">contactarme</a></p>
         </div>
       </div>
     </div>
-
   </section>
 
   <section id="contact">
-    <h2 class="card-title">CONTACTO</h2>
-    <div class="inlineSizeContainer">
+    <div class="card-title--big">Contacto</div>
+
+    <div class="mt-3 inlineSizeContainer scroll-reveal scroll--fadeinUp">
       <p>Escríbeme a:</p>
 
       <div class="text-icon">
@@ -264,24 +290,167 @@
 
 
 
-    <!-- <ul class="d-inline-flex">
-      <li>
-        <a href="githubbbb" target="_blank">
-          araceliponce
-        </a>
-      </li>
-      <li>
-        <a href="mailto:aponcesanga@gmail.com">aponcesanga@gmail.com</a>
-      </li>
-      <li>
-        <a href="/cv-araceli-ponce.pdf" target="_blank">CV</a>
-      </li>
-    </ul> -->
+
 
   </section>
+
+
+
+
+  <div class="scroll-reveal boxo left">
+
+  </div>
+  <div class="scroll-reveal boxo right"></div>
+  <style>
+    /* .boxo {
+      width: 200px;
+      height: 200px;
+      background-color: #64B6AC;
+      text-align: center;
+      line-height: 200px;
+      margin: 50em 0;
+      margin-left: calc(50% - 100px);
+      transition: transform 0.5s, opacity 0.5s;
+      color: #fff;
+      font-weight: bold;
+    } */
+    /* 
+    .boxo.left {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+
+    .boxo.right {
+      transform: translateX(200px);
+      opacity: 0;
+      background-color: #473BF0;
+    }
+
+    .boxo.active {
+      transform: translateX(0);
+      opacity: 1;
+    } */
+  </style>
+
+
+
+
+
+
+
+
+
   <footer>
-    <span>&copy 2023. Diseñado y maquetado por <a href="http://" target="_blank" rel="noopener noreferrer">@araceliponce</a></span>
+
+    <h2 class="card-title--big ">Guestbook</h2>
+
+
+    <div class="px supabase--box mt-3">
+
+      <div class="grid-4-6 gap-0 ">
+
+
+        <div>
+          <form id="messageForm" class="scroll-reveal scroll--fadeinUp">
+            <div class="grid--footer">
+              <div>
+                <label for="mensaje">Mensaje*</label>
+                <textarea id="mensaje" required class="form-control" autocomplete="false"></textarea>
+              </div>
+
+              <div>
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" required class="form-control" autocomplete="false">
+              </div>
+
+
+              <button type="submit" class="project-button">Enviar</button>
+              <small></small>
+
+            </div>
+          </form>
+        </div>
+        <div>
+          <p class="text-big">Deja un mensajito en mi portfolio</p>
+        </div>
+      </div>
+
+      <div>
+        <small>.</small>
+        <div id="contenedorMensajes" class="scroll-reveal scroll--fadeinUp"></div>
+      </div>
+
+    </div>
+
+
+    <small class="copy">Diseñado y maquetado por <a href="https://github.com/araceliponce/" target="_blank" rel="noopener noreferrer" class="d-block">@araceliponce</a> en 2023</small>
+
+
+
+
+
+
+    <div class="palette d-none">
+      <div class="color bg-xxlight">bg-xxlight</div>
+      <div class="color bg-xlight">bg-xlight</div>
+      <div class="color bg-light">bg-light</div>
+      <div class="color bg-normal">bg-normal</div>
+      <div class="color bg-dark">bg-dark</div>
+      <div class="color bg-xdark">bg-xdark</div>
+      <div class="color bg-xxdark">bg-xxdark</div>
+      <div class="color text-xxlight">text-xxlight</div>
+      <div class="color text-xlight">text-xlight</div>
+      <div class="color text-light">text-light</div>
+      <div class="color text-normal">text-normal</div>
+      <div class="color text-dark">text-dark</div>
+      <div class="color text-xdark">text-xdark</div>
+      <div class="color text-xxdark">text-xxdark</div>
+      <div class="color accent1-xxlight">accent1-xxlight</div>
+      <div class="color accent1-xlight">accent1-xlight</div>
+      <div class="color accent1-light">accent1-light</div>
+      <div class="color accent1-normal">accent1-normal</div>
+      <div class="color accent1-dark">accent1-dark</div>
+      <div class="color accent1-xdark">accent1-xdark</div>
+      <div class="color accent1-xxdark">accent1-xxdark</div>
+      <div class="color accent2-xxlight">accent2-xxlight</div>
+      <div class="color accent2-xlight">accent2-xlight</div>
+      <div class="color accent2-light">accent2-light</div>
+      <div class="color accent2-normal">accent2-normal</div>
+      <div class="color accent2-dark">accent2-dark</div>
+      <div class="color accent2-xdark">accent2-xdark</div>
+      <div class="color accent2-xxdark">accent2-xxdark</div>
+      <div class="color accent3-xxlight">accent3-xxlight</div>
+      <div class="color accent3-xlight">accent3-xlight</div>
+      <div class="color accent3-light">accent3-light</div>
+      <div class="color accent3-normal">accent3-normal</div>
+      <div class="color accent3-dark">accent3-dark</div>
+      <div class="color accent3-xdark">accent3-xdark</div>
+      <div class="color accent3-xxdark">accent3-xxdark</div>
+    </div>
+
+
+
+
   </footer>
+
+  <style>
+    /* footer {
+      padding: 0 !important;
+      display: flex !important;
+    } */
+
+    .ratio-9-6 {
+      height: 0;
+      padding-top: 33.67%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .ratio-9-6>img {
+      position: absolute;
+      inset: 0;
+    }
+  </style>
 </body>
 
 </html>
