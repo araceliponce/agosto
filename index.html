@@ -24,13 +24,10 @@
   <script src="/js/supabase.min.js" type="module"></script>
   <script src="/js/main.min.js" defer></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300" rel="stylesheet">
-
-
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rufina&family=Poppins&family=Signika&family=PT+Serif&family=Anton&family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Work+Sans&display=swap" rel="stylesheet">
 
   <!-- jquery -->
 
@@ -42,41 +39,63 @@
 </head>
 
 <body>
-  <nav class="fixed-top">
-    <ul id="navigationUl" class="">
-      <li class="nav-li">
-        <a href="#top">INICIO</a>
-      </li>
-      <li class="nav-li ">
-        <a href="#projects">PROYECTOS</a>
-      </li>
-      <li class="nav-li">
-        <a href="#about">ACERCA</a>
-      </li>
-      <li class="nav-li">
-        <a href="#contact">CONTACTO</a>
-      </li>
-    </ul>
 
-  </nav>
+  <!-- <div class="has-bg-image"></div> -->
+  <!-- <img src="tomoko-uji-Oq6Mdb4o6vA-unsplash.jpg" alt=""> -->
+
+  <header class="fixed-top d-flex">
+    <!-- <div class="logo">
+      <p>Araceli Ponce Sanga</p>
+      <p class="desktop">Desarrolladora web ux/ui</p>
+    </div> -->
+
+
+    <nav class="">
+      <ul id="navigationUl" class="delay1 animated  fadeIn">
+        <li class="nav-li">
+          <a href="#top">
+
+            <span>APS</span>
+
+
+          </a>
+        </li>
+        <div class="ml-a"></div>
+        <li class="nav-li ">
+          <a href="#projects">PROYECTOS</a>
+        </li>
+        <li class="nav-li">
+          <a href="#about">ACERCA</a>
+        </li>
+        <li class="nav-li">
+          <a href="#contact">CONTACTO</a>
+        </li>
+        <li class="nav-li desktop">
+          <a href="#guestbook">GUESTBOOK</a>
+        </li>
+      </ul>
+
+    </nav>
+
+
+
+  </header>
   <button id="circle" class=" delay1 animated  fadeIn8"></button>
 
 
 
-  <section id="top">
-    <div class="hero fadeInDown animated">
-      <div>
-        <h1 class="hero-name gradient">
-          <span>araceli ponce sanga</span>
-        </h1>
-        <div class="small">
-          <small>Desarrolladora web UX/UI</small>
-        </div>
-      </div>
-    </div>
+  <section class="hero delay2 animated  fadeIn" id="top">
+    <h1 class="title linear-gradient">
+      Araceli Ponce Sanga
+    </h1>
+    <p class="small">Desarrolladora web</p>
   </section>
 
-  <a href="#projects" class="btn--scroll-down">explorar portafolio</a>
+
+
+  <div class="btn--scroll-down delay1 animated  fadeIn8">
+    <a href="#projects" class=" typing">&darr; explorar &darr;</a>
+  </div>
 
 
   <section id="projects">
@@ -91,8 +110,8 @@
             <img class="scrollingImg" alt="captura de pantalla de proyecto" src="/images/002.png">
           </div>
           <div class="project-buttons">
-            <a class="project-button mt-small" href="https://araceliponce.github.io/notenook/">Ver sitio web →</a>
-            <a class="project-button mt-small" href="https://github.com/araceliponce/notenook">Ver repositorio →</a>
+            <a class="project-button mt-small" href="https://araceliponce.github.io/notenook/">Ver sitio web &rarr;</a>
+            <a class="project-button mt-small" href="https://github.com/araceliponce/notenook">Ver repositorio &rarr;</a>
           </div>
           <div class="grid gap-1">
             <p class="card-description">Aplicación web minimalista y responsive para tomar notas y asignarles etiquetas, con funcionalidades de búsqueda y filtrado, y un diseño de layout masonry.</p>
@@ -135,80 +154,74 @@
           </div>
         </article>
       </div>
-      <div>
 
 
-      </div>
 
-      <div class="">
-
-
-      </div>
   </section>
 
   <section id="about">
     <h2 class="card-title--big">ACERCA</h2>
 
-    <div class="wrapper mt-3">
-      <div class="box educa scroll-reveal scroll--fadeinUp">
-        <article class="project-card grid  ">
-          <div class="card-title--small">Stack resumido</div>
-          <section class="">
-            <dl>
-              <dt class="scroll-reveal scroll--fadeinUp"><button aria-controls="uxui" aria-expanded="true" data-accordion-header>
-                  <span>Diseño UX/UI</span>
-                  <div class="accordionIcon">
-                    <div class="line"></div>
-                  </div>
-                </button></dt>
-              <dd id="uxui" class="scroll-reveal scroll--fadeinUp">
-                <!-- dd is hidden, using an inside container for flex or grid -->
-                <div class="flexCol">
-                  <div class="m-0-p-0 small project-tags">
-                    <span>Figma</span>
-                    <span>Framer</span>
-                    <span>Wordpress</span>
-                    <span>Papel y lápiz</span>
-                  </div>
+    <div class="wrapper mt-3 scroll-reveal scroll--fadeinUp">
+      <div class="box educa ">
+        <!-- <article class="project-card grid  "> -->
+        <div class="card-title--small">Stack resumido</div>
+        <section class="">
+          <dl>
+            <dt class=""><button aria-controls="uxui" aria-expanded="true" data-accordion-header>
+                <span>Diseño UX/UI</span>
+                <div class="accordionIcon">
+                  <div class="line"></div>
                 </div>
-              </dd>
-
-              <dt class="scroll-reveal scroll--fadeinUp"><button aria-controls="desWeb" aria-expanded="true" data-accordion-header class="">
-                  <span>Desarrollo web</span>
-                  <div class="accordionIcon">
-                    <div class="line"></div>
-                  </div>
-                </button></dt>
-              <dd class="scroll-reveal scroll--fadeinUp" id="desWeb">
-                <div class="grid">
-                  <div class="m-0-p-0 small project-tags">
-                    <span>HTML5</span>
-
-                    <span>CSS3</span>
-                    <span>SAAS/SCSS</span>
-
-                    <span>JavaScript</span>
-                    <span>JQuery</span>
-                    <span>TypeScript</span>
-
-                    <span>Bootstrap</span>
-                    <span>Angular Material</span>
-                    <span>Mantine</span>
-                    <span>Vuetify</span>
-
-                    <span>Jekyll y Liquid</span>
-                    <span>Angular</span>
-                    <span>React</span>
-                    <span>Vue</span>
-                  </div>
+              </button></dt>
+            <dd id="uxui" class="">
+              <!-- dd is hidden, using an inside container for flex or grid -->
+              <div class="flexCol">
+                <div class="m-0-p-0 small project-tags">
+                  <span>Figma</span>
+                  <span>Framer</span>
+                  <span>Wordpress</span>
+                  <span>Papel y lápiz</span>
                 </div>
-              </dd>
-            </dl>
-          </section>
+              </div>
+            </dd>
 
-        </article>
+            <dt class=""><button aria-controls="desWeb" aria-expanded="true" data-accordion-header class="">
+                <span>Desarrollo web</span>
+                <div class="accordionIcon">
+                  <div class="line"></div>
+                </div>
+              </button></dt>
+            <dd class="" id="desWeb">
+              <div class="grid">
+                <div class="m-0-p-0 small project-tags">
+                  <span>HTML5</span>
+
+                  <span>CSS3</span>
+                  <span>SAAS/SCSS</span>
+
+                  <span>JavaScript</span>
+                  <span>JQuery</span>
+                  <span>TypeScript</span>
+
+                  <span>Bootstrap</span>
+                  <span>Angular Material</span>
+                  <span>Mantine</span>
+                  <span>Vuetify</span>
+
+                  <span>Jekyll y Liquid</span>
+                  <span>Angular</span>
+                  <span>React</span>
+                  <span>Vue</span>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </section>
+
+        <!-- </article> -->
       </div>
-      <div class="box habi scroll-reveal scroll--fadeinUp">
+      <div class="box habi">
         <div class="card-title--small">ESTUDIOS</div>
 
         <ul>
@@ -222,7 +235,7 @@
 
 
       </div>
-      <div class="box trabajo scroll-reveal scroll--fadeinUp">
+      <div class="box trabajo">
         <div class="card-title--small">TRABAJOS ANTERIORES</div>
 
         <ul>
@@ -233,9 +246,9 @@
           <li>Subtituladora</li>
         </ul>
       </div>
-      <div class="box final scroll-reveal scroll--fadeinUp">
+      <div class="box final">
         <div class="text-center">
-          <p class="card-title--small">Actualmente tengo tiempo libre!</p>
+          <p class="card-title--small">CONTACTAME!</p>
 
           <p>Si tienes alguna pregunta o algún proyecto en el que pueda ayudarte, no dudes en <a href="#contact">contactarme</a></p>
         </div>
@@ -246,7 +259,7 @@
   <section id="contact">
     <div class="card-title--big">Contacto</div>
 
-    <div class="mt-3 inlineSizeContainer scroll-reveal scroll--fadeinUp">
+    <div class="mt-3 inlineSizeContainer scroll-reveal scroll--fadeinUp d-none">
       <p>Escríbeme a:</p>
 
       <div class="text-icon">
@@ -288,49 +301,77 @@
       </div>
     </div>
 
+    <div class="d-flex contacts mt-3 wrap">
+      <div class="contact"></div>
+      <div class="contact scroll-reveal scroll--fadeinUp">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+              <path stroke-dasharray="30" stroke-dashoffset="30" d="M12 4C13.6683 4 14.6122 4.39991 15 4.5C15.5255 4.07463 16.9375 3 18.5 3C18.8438 4 18.7863 5.21921 18.5 6C19.25 7 19.5 8 19.5 9.5C19.5 11.6875 19.017 13.0822 18 14C16.983 14.9178 15.8887 15.3749 14.5 15.5C15.1506 16.038 15 17.3743 15 18C15 18.7256 15 21 15 21M12 4C10.3317 4 9.38784 4.39991 9 4.5C8.47455 4.07463 7.0625 3 5.5 3C5.15625 4 5.21371 5.21921 5.5 6C4.75 7 4.5 8 4.5 9.5C4.5 11.6875 4.98301 13.0822 6 14C7.01699 14.9178 8.1113 15.3749 9.5 15.5C8.84944 16.038 9 17.3743 9 18C9 18.7256 9 21 9 21">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="30;0" />
+              </path>
+              <path stroke-dasharray="10" stroke-dashoffset="10" d="M9 19C7.59375 19 6.15625 18.4375 5.3125 17.8125C4.46875 17.1875 4.21875 16.1562 3 15.5">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="10;0" />
+              </path>
+            </g>
+          </svg>
+        </div>
 
+        <div class="text">
+          <a href="https://github.com/araceliponce" rel="noreferrer" target="_blank">
+            @araceliponce
+          </a>
+        </div>
+      </div>
 
+      <div class="contact scroll-reveal scroll--fadeinUp">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1">
+              <rect width="18" height="14" x="3" y="5" stroke-dasharray="64" stroke-dashoffset="64" rx="1">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+              </rect>
+              <path stroke-dasharray="24" stroke-dashoffset="24" d="M3 6.5L12 12L21 6.5">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.4s" values="24;0" />
+              </path>
+            </g>
+          </svg>
+        </div>
 
+        <div class="text">
+          <a href="mailto:aponcesanga@gmail.com" rel="noreferrer" target="_blank">
+            aponcesanga@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="contact scroll-reveal scroll--fadeinUp">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke-dasharray="64" stroke-dashoffset="64" stroke-width="1" d="M13 3L19 9V21H5V3H13">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+              </path>
+              <path stroke-dasharray="14" stroke-dashoffset="14" d="M12.5 3V8.5H19">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="14;0" />
+              </path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="text">
+          <a href="/assets/cv_dev_AraceliPonceSanga.pdf" rel="noreferrer" target="_blank">cv_dev_AraceliPonceSanga.pdf</a>
+        </div>
+      </div>
+
+      <div class="contact"></div>
+    </div>
 
   </section>
 
 
 
 
-  <div class="scroll-reveal boxo left">
-
-  </div>
-  <div class="scroll-reveal boxo right"></div>
-  <style>
-    /* .boxo {
-      width: 200px;
-      height: 200px;
-      background-color: #64B6AC;
-      text-align: center;
-      line-height: 200px;
-      margin: 50em 0;
-      margin-left: calc(50% - 100px);
-      transition: transform 0.5s, opacity 0.5s;
-      color: #fff;
-      font-weight: bold;
-    } */
-    /* 
-    .boxo.left {
-      transform: translateX(-200px);
-      opacity: 0;
-    }
-
-    .boxo.right {
-      transform: translateX(200px);
-      opacity: 0;
-      background-color: #473BF0;
-    }
-
-    .boxo.active {
-      transform: translateX(0);
-      opacity: 1;
-    } */
-  </style>
 
 
 
@@ -339,18 +380,19 @@
 
 
 
-
-  <footer>
+  <section id="guestbook">
 
     <h2 class="card-title--big ">Guestbook</h2>
 
 
     <div class="px supabase--box mt-3">
 
-      <div class="grid-4-6 gap-0 ">
-
-
+      <div class="d-flex wrap gap-0 min-w-100">
         <div>
+          <p class="text-big">Deja un mensajito en mi portfolio</p>
+        </div>
+
+        <div class="flex-1">
           <form id="messageForm" class="scroll-reveal scroll--fadeinUp">
             <div class="grid--footer">
               <div>
@@ -370,87 +412,85 @@
             </div>
           </form>
         </div>
-        <div>
-          <p class="text-big">Deja un mensajito en mi portfolio</p>
-        </div>
+
       </div>
 
       <div>
         <small>.</small>
-        <div id="contenedorMensajes" class="scroll-reveal scroll--fadeinUp"></div>
+        <div id="contenedorMensajes" class=""></div>
       </div>
 
     </div>
 
-
-    <small class="copy">Diseñado y maquetado por <a href="https://github.com/araceliponce/" target="_blank" rel="noopener noreferrer" class="d-block">@araceliponce</a> en 2023</small>
-
+  </section>
 
 
 
 
 
-    <div class="palette d-none">
-      <div class="color bg-xxlight">bg-xxlight</div>
-      <div class="color bg-xlight">bg-xlight</div>
-      <div class="color bg-light">bg-light</div>
-      <div class="color bg-normal">bg-normal</div>
-      <div class="color bg-dark">bg-dark</div>
-      <div class="color bg-xdark">bg-xdark</div>
-      <div class="color bg-xxdark">bg-xxdark</div>
-      <div class="color text-xxlight">text-xxlight</div>
-      <div class="color text-xlight">text-xlight</div>
-      <div class="color text-light">text-light</div>
-      <div class="color text-normal">text-normal</div>
-      <div class="color text-dark">text-dark</div>
-      <div class="color text-xdark">text-xdark</div>
-      <div class="color text-xxdark">text-xxdark</div>
-      <div class="color accent1-xxlight">accent1-xxlight</div>
-      <div class="color accent1-xlight">accent1-xlight</div>
-      <div class="color accent1-light">accent1-light</div>
-      <div class="color accent1-normal">accent1-normal</div>
-      <div class="color accent1-dark">accent1-dark</div>
-      <div class="color accent1-xdark">accent1-xdark</div>
-      <div class="color accent1-xxdark">accent1-xxdark</div>
-      <div class="color accent2-xxlight">accent2-xxlight</div>
-      <div class="color accent2-xlight">accent2-xlight</div>
-      <div class="color accent2-light">accent2-light</div>
-      <div class="color accent2-normal">accent2-normal</div>
-      <div class="color accent2-dark">accent2-dark</div>
-      <div class="color accent2-xdark">accent2-xdark</div>
-      <div class="color accent2-xxdark">accent2-xxdark</div>
-      <div class="color accent3-xxlight">accent3-xxlight</div>
-      <div class="color accent3-xlight">accent3-xlight</div>
-      <div class="color accent3-light">accent3-light</div>
-      <div class="color accent3-normal">accent3-normal</div>
-      <div class="color accent3-dark">accent3-dark</div>
-      <div class="color accent3-xdark">accent3-xdark</div>
-      <div class="color accent3-xxdark">accent3-xxdark</div>
+
+  <div class="palette d-none">
+    <div class="color bg-xxlight">bg-xxlight</div>
+    <div class="color bg-xlight">bg-xlight</div>
+    <div class="color bg-light">bg-light</div>
+    <div class="color bg-normal">bg-normal</div>
+    <div class="color bg-dark">bg-dark</div>
+    <div class="color bg-xdark">bg-xdark</div>
+    <div class="color bg-xxdark">bg-xxdark</div>
+    <div class="color text-xxlight">text-xxlight</div>
+    <div class="color text-xlight">text-xlight</div>
+    <div class="color text-light">text-light</div>
+    <div class="color text-normal">text-normal</div>
+    <div class="color text-dark">text-dark</div>
+    <div class="color text-xdark">text-xdark</div>
+    <div class="color text-xxdark">text-xxdark</div>
+    <div class="color accent1-xxlight">accent1-xxlight</div>
+    <div class="color accent1-xlight">accent1-xlight</div>
+    <div class="color accent1-light">accent1-light</div>
+    <div class="color accent1-normal">accent1-normal</div>
+    <div class="color accent1-dark">accent1-dark</div>
+    <div class="color accent1-xdark">accent1-xdark</div>
+    <div class="color accent1-xxdark">accent1-xxdark</div>
+    <div class="color accent2-xxlight">accent2-xxlight</div>
+    <div class="color accent2-xlight">accent2-xlight</div>
+    <div class="color accent2-light">accent2-light</div>
+    <div class="color accent2-normal">accent2-normal</div>
+    <div class="color accent2-dark">accent2-dark</div>
+    <div class="color accent2-xdark">accent2-xdark</div>
+    <div class="color accent2-xxdark">accent2-xxdark</div>
+    <div class="color accent3-xxlight">accent3-xxlight</div>
+    <div class="color accent3-xlight">accent3-xlight</div>
+    <div class="color accent3-light">accent3-light</div>
+    <div class="color accent3-normal">accent3-normal</div>
+    <div class="color accent3-dark">accent3-dark</div>
+    <div class="color accent3-xdark">accent3-xdark</div>
+    <div class="color accent3-xxdark">accent3-xxdark</div>
+  </div>
+
+
+
+
+
+
+  <footer class="marquee mt-3">
+    <div class="marquee--inner heading--md">
+      <span class="d-flex"> Diseñado y maquetado por <a href="https://github.com/araceliponce/" target="_blank" rel="noopener noreferrer" class="d-block">@araceliponce</a> en 2023. </span>
+      <span>Con HTML5, SCSS, JavaScript, y algo de JQuery. </span>
+      <span class="d-flex"> Diseñado y maquetado por <a href="https://github.com/araceliponce/" target="_blank" rel="noopener noreferrer" class="d-block">@araceliponce</a> en 2023. </span>
+      <span>Con HTML5, SCSS, JavaScript, y algo de JQuery. </span>
+      <span class="d-flex"> Diseñado y maquetado por <a href="https://github.com/araceliponce/" target="_blank" rel="noopener noreferrer" class="d-block">@araceliponce</a> en 2023. </span>
+      <span>Con HTML5, SCSS, JavaScript, y algo de JQuery. </span>
+
     </div>
-
-
-
-
   </footer>
 
-  <style>
-    /* footer {
-      padding: 0 !important;
-      display: flex !important;
-    } */
 
-    .ratio-9-6 {
-      height: 0;
-      padding-top: 33.67%;
-      overflow: hidden;
-      position: relative;
-    }
 
-    .ratio-9-6>img {
-      position: absolute;
-      inset: 0;
-    }
-  </style>
+
+
+
+
+
 </body>
 
 </html>
