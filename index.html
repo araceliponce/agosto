@@ -9,8 +9,8 @@
 
 
 
-  <link rel="stylesheet" href="/css/nuevo.min.css">
-  <script src="/js/nuevo.min.js" type="module"></script>
+  <link rel="stylesheet" href="css/nuevo.min.css">
+  <script src="js/nuevo.min.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 
 
@@ -29,20 +29,38 @@
 
 <body aria-haspopup="dialog">
 
-  <header class="fixed-header ">
-    <div class="d-flex fixed-text contained">
-      <p class="flex-1">aps</p>
-      <a href="mailto:aponcesanga@gmail.com">aponcesanga@gmail.com</a>
-    </div>
+  <!-- <a href="mailto:aponcesanga@gmail.com" class="small ml-auto">aponcesanga@gmail.com</a> -->
 
+  <header class="fixed-header show">
+    <div class="d-flex fixed-text contained small">
+      <div class="grid--two-rows">
+        <span class="bold">ARACELI</span>
+        <span> PONCE SANGA</span>
+      </div>
+
+      <div class="clock ml-auto grid--two-rows text-end">
+        <span class="bold">PERÚ</span>
+        <span id="time"></span>
+      </div>
+    </div>
   </header>
-  <!-- <div class="bg"></div> -->
 
 
   <section class="hero">
-    <h1 class="biggest linear-gradient py-small">araceli ponce sanga</h1>
-    <p>Desarrolladora web</p>
+    <h1 class="py-small text-clamp" aria-label="Araceli Ponce Sanga.">
+      <span aria-hidden="true">Araceli</span>
+      <span aria-hidden="true">Ponce</span>
+      <span aria-hidden="true">Sanga</span>
+    </h1>
+    <p class="small">Desarrolladora Digital</p>
+    <div class="links">
+      <a class="btn--filled yellow" href="assets/DEV_Araceli_Ponce_Sanga.pdf" target="_blank" rel="noopener noreferrer">MI CV</a>
+      <a class="btn--filled yellow" href="assets/DEV_Araceli_Ponce_Sanga--en.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
+    </div>
+
+
   </section>
+
 
   <main>
     <section id="proyectos">
@@ -104,7 +122,7 @@
                     <li>JAVASCRIPT</li>
                 </div>
               </div>
-              <div class="activity small caps">Estoy trabajando en este proyecto</div>
+              <div class="activity small caps">Trabajando en este proyecto</div>
               <div class="blocks">
                 <span>diseño ux/ui</span>
                 <span>maquetación web</span>
@@ -256,16 +274,17 @@
 
 
 
+    <div class="py"></div>
 
 
-    <h2 class="py">Llevo tus ideas del <span class="underlined">diseño</span> a la <span class="underlined">realidad</span></h2>
 
-    <section id="habilidades" class="featured h-min-100vh contained text-center mt-big">
-      <h2>Estas son mis herramientas</h2>
+    <section id="habilidades" class="featured contained text-center py-xbig">
+      <p>Estas son las herramientas que más uso</p>
+      <h2>para llevar tus ideas del <span class="underlined">diseño</span> a la <span class="underlined">realidad</span></h2>
 
-      <div class="grid--equis gap-small">
+      <div class="grid--equis gap-small mt-big">
         <div class="uno">
-          <p>de diseño</p>
+          <p>me encargo del diseño, </p>
           <ul class="tags mt">
             <li>Figma</li>
             <li>Photoshop</li>
@@ -275,7 +294,7 @@
           </ul>
         </div>
         <div class="dos">
-          <p>de maquetación y desarrollo</p>
+          <p>la maquetación y desarrollo</p>
           <ul class="tags mt">
             <li>HTML5</li>
 
@@ -302,7 +321,7 @@
           </ul>
         </div>
         <div class="tres">
-          <p>y de bases de datos</p>
+          <p>y algunas bases de datos</p>
           <ul class="tags mt">
             <li>Supabase</li>
             <li>Firebase</li>
@@ -316,12 +335,12 @@
     </section>
 
 
-    <section id="certificaciones" class="h-min-100vh contained text-center">
+    <section id="certificaciones" class=" contained text-center py-xbig">
       <p class="">No confíes solo en mis palabras</p>
 
       <h2 class="">Mira mis certificados</h2>
 
-      <div class="slider-js relative " data-slider='{ "loop": true, "slidesPerView": 1.2, "spacing": 10, "nav": true, "autoplay": false }'>
+      <div class="slider-js relative " data-slider='{ "loop": true, "slidesPerView": 2, "spacing": 10, "nav": true, "autoplay": false }'>
         <ul class="keen-slider">
           <li class="keen-slider__slide">
             <div class="abc">
@@ -374,7 +393,7 @@
 
     </section>
 
-    <section id="miniproyectos" class="h-min-100vh contained ">
+    <section id="miniproyectos" class="h-min-100vh contained mt-xbig ">
 
       <div class="text-center">
         <p>También puedes ver todos mis proyectos públicos en github</p>
@@ -417,11 +436,11 @@
       <div class=" on-center">
         <p>¿Quieres páginas web responsive, modernas, perfectas al píxel?</p>
         <h2>Trabajemos juntos</h2>
-        <p class="mt-small"><span>Envíame un correo a</span> <a href="mailto:aponcesanga@gmail.com" class="btn--filled yellow">aponcesanga@gmail.com</a>
+        <p class="mt-small"><span>Envíame un correo a</span> <a href="mailto:aponcesanga@gmail.com" class="btn--filled yellow text-none">aponcesanga@gmail.com</a>
         </p>
       </div>
       <div class="on-bottom">
-        <button id="showMoreBtn" class="btn">¿Dudas, comentarios o consultas?</button>
+        <button id="showMoreBtn" class="btn">Dejar un comentario</button>
         <div class="marquee-scroller__wrapper blink-text">
           <div class="marquee-scroller__group" id="pushesBox">
           </div>
@@ -474,9 +493,11 @@
 
         </div>
 
-        <div>
-          <div id="contenedorMensajes" class=""></div>
-        </div>
+        <!-- <div> -->
+
+        <div id="contenedorMensajes" class="scroll-reveal"></div>
+
+        <!-- </div> -->
 
       </div>
 
@@ -499,7 +520,22 @@
     </div>
   </div>
 
-
+  <style>
+    body:after {
+      content: '';
+      animation: grain 7s steps(10) infinite;
+      background-image: url('assets/grain.png');
+      background-repeat: repeat;
+      height: 300%;
+      left: -100%;
+      opacity: .05;
+      pointer-events: none;
+      position: fixed;
+      top: -100%;
+      width: 300%;
+      will-change: transform;
+    }
+  </style>
 
 </body>
 
