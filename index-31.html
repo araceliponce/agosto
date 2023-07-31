@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Araceli Ponce Sanga | Portafolio web</title>
+
+
+
+
+  <link rel="stylesheet" href="css/nuevo.min.css">
+
+  <script src="js/nuevo.min.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js" defer></script>
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Work+Sans" rel="stylesheet">
+
+
+
+  <!-- Search Engine Optimization -->
+  <meta name="description" content="Transformando ideas en realidad: desarrolladora digital con experiencia en crear sitios optimizados y responsivos. Diseños que se adaptan a las necesidades de tu audiencia.">
+  <meta name="keywords" content="Front end developer, Digital developer, Desarrollador web, Desarrollador digital, Integración con API, Supabase, Desarrollo de sitios web responsivos, Diseño de sitios web a medida, Animaciones web, Optimización de sitios web">
+  <meta name="author" content="Araceli Ponce Sanga">
+
+  <!-- Social Media Optimization -->
+  <meta property="og:title" content="Araceli Ponce Sanga | Portafolio web">
+  <meta property="og:description" content="Transformando ideas en realidad: desarrolladora digital con experiencia en crear sitios optimizados y responsivos. Diseños que se adaptan a las necesidades de tu audiencia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.araceliponce.github.io/">
+  <meta property="og:image" content="assets/og-image.png">
+
+
+
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+
+
+
+</head>
+
+<body aria-haspopup="dialog">
+  <div class="grain"></div>
+
+
+  <header class="fixed-header show">
+    <div class="d-flex fixed-text contained small">
+      <div class="grid--two-rows">
+        <span class="bold">ARACELI</span>
+        <span> PONCE SANGA</span>
+      </div>
+
+      <div class="clock ml-auto grid--two-rows text-end">
+        <span class="bold">PERÚ</span>
+        <span id="time"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <h1 class="py-small text-clamp" aria-label="Araceli Ponce Sanga.">
+      <span aria-hidden="true">Araceli</span>
+      <span aria-hidden="true">Ponce</span>
+      <span aria-hidden="true">Sanga</span>
+    </h1>
+    <p class="small">Desarrolladora Digital</p>
+    <div class="links">
+      <a class="btn--filled yellow" href="assets/DEV_Araceli_Ponce_Sanga.pdf" target="_blank" rel="noopener noreferrer">MI CV</a>
+      <a class="btn--filled yellow" href="assets/DEV_Araceli_Ponce_Sanga--en.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
+    </div>
+
+
+  </section>
+
+
+  <main>
+    <section id="proyectos">
+      <h2 class="text-center">Proyectos</h2>
+      <ol class="contained pt-xbig">
+
+
+        <!--  -->
+
+        <li>
+          <article class="featured">
+
+            <div class="slider-js relative" data-slider='{ "loop": true, "slidesPerView": 1, "spacing": 0, "nav": true, "autoplay": false }'>
+              <ul class="keen-slider">
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="../images/rooster_01.png" alt="Captura de pantalla de RedRooster">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="../images/rooster_02.png" alt="Captura de pantalla de RedRooster">
+                  </div>
+                </li>
+              </ul>
+              <button class="arrow arrow-left btn--filled" aria-label="Anterior imagen. ">&larr;</button>
+              <button class="arrow arrow-right btn--filled" aria-label="Siguiente imagen. ">&rarr;</button>
+              <div class="dots"></div>
+
+            </div>
+
+            <div class="content">
+              <div class="d-flex align-items-center">
+                <h3 class="flex-1 ">
+                  <!-- RedRooster. -->
+                  <!-- <small>Cafés de calidad excepcional.</small> -->
+
+                  <a href="https://araceliponce.github.io/tomatojoy/" target="_blank" rel="noopener noreferrer" class="">RedRooster.
+                    <small>Cafés de calidad excepcional.</a>
+
+                </h3>
+
+                <button class="icon--expand btn--filled" aria-expanded="false" aria-controls="moreB">
+                </button>
+              </div>
+
+              <div id="moreB" hidden>
+                <div class="text-divided">
+                  <!-- <p>Encontré la página web de RedRoosterCoffe mientras buscaba buenos ejemplos de UX y UI, y que decidí intentar clonar por su gran cantidad de elementos. Aún es un proyecto en desarrollo.</p> -->
+                  <p>Hace unos meses, mientras exploraba buenos ejemplos de UX y UI, di con <a href="https://www.redroostercoffee.com/" target="_blank" rel="noopener noreferrer">RedRoosterCoffee.com</a> y quedé impresionada. </p>
+                  <p>Su página de inicio alberga una gran cantidad de componentes, pero no se siente abarrotada en ningún momento, sino que todo fluye armoniosamente. </p>
+                  <p>Por eso, escogí esta web como referencia para reforzar mis habilidades en diseño y maquetación. Estoy usando grid como nunca antes. </p>
+                </div>
+                <div>
+                  <ul class="tags">
+                    <li>VUE</li>
+                    <li>VITE</li>
+                    <li>VUETIFY</li>
+                    <li>KEEN-SLIDER.IO</li>
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>GRID</li>
+                    <li>JAVASCRIPT</li>
+                </div>
+              </div>
+              <div class="activity small caps">Trabajando en este proyecto</div>
+
+              <!-- <a href="https://araceliponce.github.io/tomatojoy/" target="_blank" rel="noopener noreferrer" class=" btn--filled">Ver sitio web</a> -->
+
+            </div>
+          </article>
+        </li>
+
+        <!--  -->
+        <li>
+          <article class="featured">
+            <div class="slider-js relative" data-slider='{ "loop": true, "slidesPerView": 1, "spacing": 0, "nav": true, "autoplay": false }'>
+              <ul class="keen-slider">
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="images/notenook_01.png" alt="Captura de pantalla de NoteNook">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="images/notenook_02.png" alt="Captura de pantalla de NoteNook">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="images/notenook_03.png" alt="Captura de pantalla de NoteNook">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="images/notenook_04.png" alt="Captura de pantalla de NoteNook">
+                  </div>
+                </li>
+              </ul>
+              <button class="arrow arrow-left btn--filled" aria-label="Anterior imagen. ">&larr;</button>
+              <button class="arrow arrow-right btn--filled" aria-label="Siguiente imagen. ">&rarr;</button>
+              <div class="dots"></div>
+
+            </div>
+
+            <div class="content">
+              <div class="d-flex align-items-center">
+                <h3 class="flex-1 ">
+                  NoteNook.
+                  <small>Apuntes simples, máxima productividad.</small>
+                </h3>
+
+                <button class="icon--expand btn--filled" aria-expanded="false" aria-controls="moreA">
+                </button>
+              </div>
+
+              <div id="moreA" hidden>
+                <div class="text-divided">
+                  <p>La app de notas fácil de usar, perfecta para cualquier dispositivo y momento del día. Organiza tus pensamientos con etiquetas y redescubre ideas olvidadas. </p>
+                </div>
+                <ul class="tags">
+                  <li>REACT</li>
+                  <li>VITE</li>
+                  <li>MANTINE</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>TYPESCRIPT</li>
+                </ul>
+
+              </div>
+
+              <div class="blocks">
+                <!-- <span>diseño ux/ui</span>
+                <span>maquetación web</span> -->
+                <a href="https://araceliponce.github.io/notenook/" target="_blank" rel="noopener noreferrer" class=" btn--filled">Ver sitio web</a>
+              </div>
+            </div>
+          </article>
+        </li>
+
+
+        <li>
+          <article class="featured">
+
+            <div class="slider-js relative" data-slider='{ "loop": true, "slidesPerView": 1, "spacing": 0, "nav": true, "autoplay": false }'>
+              <ul class="keen-slider">
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="/images/25walker_01.png" alt="Captura de pantalla de '25walker'.">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="/images/25walker_02.png" alt="Captura de pantalla de '25walker'.">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="/images/25walker_03.png" alt="Captura de pantalla de '25walker'.">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="/images/25walker_04.png" alt="Captura de pantalla de '25walker'.">
+                  </div>
+                </li>
+              </ul>
+              <button class="arrow arrow-left btn--filled" aria-label="Anterior imagen. ">&larr;</button>
+              <button class="arrow arrow-right btn--filled" aria-label="Siguiente imagen. ">&rarr;</button>
+              <div class="dots"></div>
+
+            </div>
+
+            <div class="content">
+              <div class="d-flex align-items-center">
+                <h3 class="flex-1 ">
+                  25walker.
+                  <small>repository of links</small>
+                </h3>
+
+                <button class="icon--expand btn--filled " aria-expanded="false" aria-controls="moreWalker">
+                </button>
+              </div>
+
+              <div id="moreWalker" hidden>
+                <div class="text-divided">
+                  <p>lorem </p>
+                  <p>lorem</p>
+                </div>
+                <div>
+                  <ul class="tags">
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>SUPABASE</li>
+                    <li>GOOGLE AUTH</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blocks">
+                <!-- <span>diseño ux/ui</span>
+                <span>maquetación web</span> -->
+                <a href="https://25walker.github.io/" target="_blank" rel="noopener noreferrer" class=" btn--filled">Ver sitio web</a>
+
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="featured">
+
+            <div class="slider-js relative" data-slider='{ "loop": true, "slidesPerView": 1, "spacing": 0, "nav": true, "autoplay": false }'>
+              <ul class="keen-slider">
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="/images/startpage_01.png" alt="Captura de pantalla de 'Startpage 111'.">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="/images/startpage_02.png" alt="Captura de pantalla de 'Startpage 111'.">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="/images/startpage_03.png" alt="Captura de pantalla de 'Startpage 111'.">
+                  </div>
+                </li>
+                <li class="keen-slider__slide">
+                  <div class="abc">
+                    <img loading="lazy" src="/images/startpage_04.png" alt="Captura de pantalla de 'Startpage 111'.">
+                  </div>
+                </li>
+              </ul>
+              <button class="arrow arrow-left btn--filled" aria-label="Anterior imagen. ">&larr;</button>
+              <button class="arrow arrow-right btn--filled" aria-label="Siguiente imagen. ">&rarr;</button>
+              <div class="dots"></div>
+
+            </div>
+
+            <div class="content">
+              <div class="d-flex align-items-center">
+                <h3 class="flex-1 ">
+                  Startpage 111.
+                  <small>Inicia tus días con la mejor suerte.</small>
+                </h3>
+
+                <button class="icon--expand btn--filled " aria-expanded="false" aria-controls="moreC">
+                </button>
+              </div>
+
+              <div id="moreC" hidden>
+                <div class="text-divided">
+                  <p>111 surgió cuando un día recorde haber visto un sitio web que cambiaba de colores al hacer click (o tap, en celulares). Siempre me fascinó, y aún lo hace a pesar de lo sencillo que es. </p>
+                  <p>Como features adicionales tiene una pequeña colección de juegos de palabras que cambia al hacer click en el texto, un sidebar que puedes abrir y cerrar con la tecla 'Espacio' y dos apartados: uno para tomar notas y otro donde puedes ver tus mas recientes pushes en Github, con la opción de agregar tu token de acceso para ver los pushes en tus repositorios privados. </p>
+                  <p>Opté por mantenerlo simple con HTML, CSS y JS para una edición y visualización sin necesidad de compilar</p>
+                </div>
+                <div>
+                  <ul class="tags">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JAVASCRIPT</li>
+                    <li>GITHUB API</li>
+                    <li>LOCAL STORAGE</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blocks">
+                <span>diseño ux/ui</span>
+                <span>maquetación web</span>
+                <a href="https://araceliponce.github.io/111/" target="_blank" rel="noopener noreferrer" class=" btn--filled">Ver sitio web</a>
+
+              </div>
+            </div>
+          </article>
+        </li>
+
+
+      </ol>
+    </section>
+
+
+
+
+
+    <div class="py"></div>
+
+
+
+    <section id="habilidades" class="featured contained text-center py-xbig">
+      <p>Estas son las herramientas que más uso</p>
+      <h2>para llevar tus ideas del <span class="underlined">diseño</span> a la <span class="underlined">realidad</span></h2>
+
+      <div class="grid--equis gap-small mt-big">
+        <div class="uno">
+          <p>me encargo del diseño, </p>
+          <ul class="tags mt">
+            <li>Figma</li>
+            <li>Photoshop</li>
+            <li>Framer</li>
+            <li>Wordpress</li>
+            <li>Papel y lápiz</li>
+          </ul>
+        </div>
+        <div class="dos">
+          <p>la maquetación y desarrollo</p>
+          <ul class="tags mt">
+            <li>HTML5</li>
+
+            <li>CSS3</li>
+            <li>SAAS/SCSS</li>
+
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>TypeScript</li>
+
+
+            <li>Jekyll y Liquid</li>
+            <li>Bootstrap</li>
+
+            <li>Angular</li>
+            <li>Angular Material</li>
+
+            <li>React</li>
+            <li>Mantine</li>
+
+            <li>Vue</li>
+            <li>Vuetify</li>
+
+          </ul>
+        </div>
+        <div class="tres">
+          <p>y algunas bases de datos</p>
+          <ul class="tags mt">
+            <li>Supabase</li>
+            <li>Firebase</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+    <section id="certificaciones" class=" contained text-center py-xbig">
+      <p class="">No confíes solo en mis palabras</p>
+
+      <h2 class="">Mira mis certificados</h2>
+
+      <div class="slider-js relative " data-slider='{ "loop": true, "slidesPerView": 2, "spacing": 0, "nav": true, "autoplay": false }'>
+        <ul class="keen-slider">
+          <li class="keen-slider__slide">
+            <div class="abc">
+              <img loading="lazy" src="certificados/certus_01.png" alt="">
+            </div>
+          </li>
+          <li class="keen-slider__slide">
+            <div class="abc">
+              <img loading="lazy" src="certificados/certus_02.png" alt="">
+            </div>
+          </li>
+          <li class="keen-slider__slide">
+            <div class="abc">
+              <img loading="lazy" src="certificados/a11y.png" alt="">
+            </div>
+          </li>
+          <li class="keen-slider__slide">
+            <div class="abc">
+              <img loading="lazy" src="certificados/react_typescript.png" alt="">
+            </div>
+          </li>
+          <li class="keen-slider__slide">
+            <div class="abc">
+              <img loading="lazy" src="certificados/efset_ingles.png" alt="">
+            </div>
+          </li>
+          <li class="keen-slider__slide">
+            <div class="abc">
+              <img loading="lazy" src="certificados/figma_motion.png" alt="">
+            </div>
+          </li>
+          <li class="keen-slider__slide">
+            <div class="abc">
+              <img loading="lazy" src="certificados/flexbox_grid.png" alt="">
+            </div>
+          </li>
+
+        </ul>
+        <button class="arrow arrow-left btn--filled" aria-label="Anterior imagen. ">&larr;</button>
+        <button class="arrow arrow-right btn--filled" aria-label="Siguiente imagen. ">&rarr;</button>
+        <div class="dots"></div>
+
+      </div>
+
+
+
+
+
+
+
+    </section>
+
+    <section id="miniproyectos" class="h-min-100vh contained mt-xbig ">
+
+      <div class="text-center">
+        <p>También puedes ver todos mis proyectos públicos en github</p>
+        <h2>+ de 80 mini-proyectos en Github</h2>
+
+        <div class="slider-js relative mt" data-slider='{ "loop": true, "slidesPerView": 3, "spacing": 0, "nav": true, "autoplay": false }'>
+          <ul class="keen-slider">
+            <li class="keen-slider__slide">
+              <div class="abc">
+                <img loading="lazy" src="images/js-grid-buttons-calendar.png" alt="">
+                <small>
+                  <a href="/js-grid-buttons-calendar">Calendar with buttons</a>
+                </small>
+              </div>
+            </li>
+            <li class="keen-slider__slide">
+              <div class="abc">
+                <img loading="lazy" src="images/yellow_paper.png" alt="">
+                <small>
+                  <a href="/yellow_paper">Yellow Paper</a>
+                </small>
+              </div>
+            </li>
+            <li class="keen-slider__slide">
+              <div class="abc">
+                <a href="https://github.com/araceliponce" class="btn--github" target="_blank" rel="noopener noreferrer">Visita mi github</a>
+
+              </div>
+            </li>
+
+
+          </ul>
+          <button class="arrow arrow-left btn--filled" aria-label="Anterior imagen. ">&larr;</button>
+          <button class="arrow arrow-right btn--filled" aria-label="Siguiente imagen. ">&rarr;</button>
+          <div class="dots"></div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <section id="contacto" class="h-min-100vh text-center relative contained">
+      <div class=" on-center">
+        <p>¿Quieres páginas web responsive, modernas, perfectas al píxel?</p>
+        <h2>Trabajemos juntos</h2>
+        <p class="mt-small"><span>Envíame un correo a</span> <a href="mailto:aponcesanga@gmail.com" class="btn--filled yellow text-none">aponcesanga@gmail.com</a>
+        </p>
+      </div>
+      <div class="on-bottom">
+        <button id="showMoreBtn" class="btn">Dejar un comentario</button>
+        <div class="marquee-scroller__wrapper blink-text">
+          <div class="marquee-scroller__group" id="pushesBox">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+
+  <footer class="contained" id="more" hidden>
+
+    <div id="guestbook" class="mt">
+      <div class="text-center">
+        <p>Bienvenido/a al</p>
+        <p class="biggest">Guestbook</p>
+        <p>de araceliponce.github.io</p>
+      </div>
+
+      <div class="supabase--box mt-big">
+
+        <div class="">
+
+          <div>
+            <p>Déjame tus dudas, comentarios o consultas aquí</p>
+            <small>No necesitas iniciar sesión</small>
+          </div>
+
+          <form id="messageForm">
+            <div class="grid--footer">
+              <div class="text-start">
+                <label for="mensaje">Mensaje*</label>
+                <textarea id="mensaje" required class="form-control" autocomplete="off"></textarea>
+              </div>
+
+              <div class="text-start">
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" required class="form-control" autocomplete="off">
+              </div>
+
+
+              <button type="submit" class="btn--filled py-small">Enviar</button>
+              <small></small>
+
+            </div>
+          </form>
+
+        </div>
+
+        <!-- <div> -->
+
+        <div id="contenedorMensajes" class="scroll-reveal"></div>
+
+        <!-- </div> -->
+
+      </div>
+
+    </div>
+  </footer>
+  <div class="py"></div>
+
+
+
+  <div class="overlay" role="dialog" aria-modal="true" aria-live="assertive" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="close-modal" aria-label="Cerrar">
+        x
+      </button>
+      <img src="" alt="" srcset="">
+
+      <button class="close-modal" aria-label="Cerrar modal">
+        Cerrar
+      </button>
+    </div>
+  </div>
+
+
+  <style>
+    .grain:after {
+      content: '';
+      animation: grain 7s steps(10) infinite;
+      background-image: url('assets/grain.png');
+      background-repeat: repeat;
+      height: 300%;
+      left: -100%;
+      opacity: .04;
+      pointer-events: none;
+      position: fixed;
+      top: -100%;
+      width: 300%;
+      will-change: transform;
+    }
+  </style>
+</body>
+
+</html>
